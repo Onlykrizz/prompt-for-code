@@ -6,6 +6,19 @@
 
 ## [Unreleased]
 
+## [0.4.0] - 2025-08-30
+
+### 新增 (Added)
+- 添加了项目级别的Claude配置文件（CLAUDE.md）
+- 添加了通用约定配置文件（CLAUDE-appoint.md）
+- 添加了general目录下的项目和用户级配置文件
+- 添加了专业化代理目录结构（specialization-agents/）
+
+### 变更 (Changed)
+- 更新了README.MD，明确项目用途和任务说明
+- 优化了general目录下的README结构
+- 删除了过时的CLAUDE-main.md文件
+
 ## [0.3.0] - 2025-08-30
 
 ### 新增 (Added)

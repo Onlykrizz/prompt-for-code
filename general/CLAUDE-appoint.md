@@ -139,12 +139,32 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
    - 记录版本号、日期、变更类型和内容
    - 更新 CHANGELOG.md 文件
 
+#### Changelog 维护规则
+
+##### 开发阶段
+- 所有新的变更都记录在 `[Unreleased]` 部分
+- 每次功能开发、修复或变更后立即更新
+- 保持 `[Unreleased]` 作为最新变更的临时容器
+
+##### 版本发布时
+- 将 `[Unreleased]` 改为具体版本号和日期（如 `[0.2.0] - 2025-01-30`）
+- 创建新的空 `[Unreleased]` 部分供后续开发使用
+- 使用 `git tag` 创建对应的版本标签
+
+##### 版本号规则（语义化版本）
+- **主版本号（MAJOR）**：不兼容的 API 变更
+- **次版本号（MINOR）**：向下兼容的功能新增
+- **修订号（PATCH）**：向下兼容的问题修复
+
 #### Changelog 格式示例
 ```markdown
-## [版本号] - 日期
-
+## [Unreleased]
 ### 新增 (Added)
-- 新功能描述
+- 开发中的新功能
+
+## [0.2.0] - 2025-01-30
+### 新增 (Added)
+- 已发布的新功能描述
 
 ### 变更 (Changed)  
 - 现有功能的变更
@@ -154,6 +174,10 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
 
 ### 移除 (Removed)
 - 移除的功能
+
+## [0.1.0] - 2025-01-29
+### 新增 (Added)
+- 初始版本功能
 ```
 
 ## 质量保证要求

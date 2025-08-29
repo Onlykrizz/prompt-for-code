@@ -85,6 +85,14 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
 
 ### 3. 编码与测试阶段
 
+#### 时间处理规范
+- **获取实时时间**：必须在每一次要用到实时时间时，执行以下命令获取本地时间：
+  ```python
+  python -c "import datetime; print(datetime.datetime.today())"
+  ```
+- **禁止假设时间**：不要使用硬编码的时间或假设的日期
+- **时间格式**：根据具体需求使用适当的时间格式
+
 #### 编码规范
 - 遵循项目既定的代码风格和约定
 - 优先重构现有代码而非重写

@@ -6,6 +6,19 @@
 
 ## [Unreleased]
 
+## [0.5.0] - 2025-08-29
+
+### 新增 (Added)
+- 创建了5个Rust专业化子代理：
+  - `rust-cli-developer.md` - CLI应用开发专家
+  - `rust-web-developer.md` - Web服务开发架构师  
+  - `rust-library-developer.md` - 库项目开发专家
+  - `rust-crossplatform-developer.md` - 跨平台开发架构师
+  - `rust-performance-developer.md` - 高性能系统开发工程师
+- 每个子代理都基于相应的Rust项目模板，提供针对性的专业指导
+- 所有子代理都严格遵循架构设计原则，避免代码坏味道
+- 为不同应用场景提供了完整的技术栈和最佳实践指导
+
 ## [0.4.0] - 2025-08-30
 
 ### 新增 (Added)

@@ -1,6 +1,10 @@
 # CLAUDE.md
 
-所有过程都应遵循@CLAUDE-appoint.md。
+所有过程都应遵循@CLAUDE-appointment.md。
+
+编程规范应遵循***模板.md
+
+各类过程开始时、结束时都应检查@CLAUDE-check.md
 
 # 本次任务内容
 

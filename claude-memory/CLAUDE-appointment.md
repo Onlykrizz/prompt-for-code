@@ -45,7 +45,6 @@
 - **`CLAUDE.md`** - 项目指令和开发规范  
 - **`program_flowchart/src`** - 程序流程图文档目录
 - **`program_flowchart/png`** - 程序流程图 png 格式输出目录
-- **`program_flowchart/txt`** - 程序流程图 txt 格式输出目录
 
 #### 流程图组织结构
 - **分层设计**：总览图作为入口点，复杂流程提取为独立模块
@@ -60,24 +59,15 @@ program_flowchart/src
 
 #### 流程图规范
 - **设计语言**：必须使用[plantuml](https://plantuml.com/zh/)进行流程图设计
-- **及时生成**：必须在每一个流程图文件完成后立刻生成对应的png和txt文件
+- **及时生成**：必须在每一个流程图文件完成后立刻生成对应的png文件
 
-#### 流程图命令参考
+#### 流程图生成命令
 
-> 下面的命令参考中，以 `program_flowchart/src/总览.txt` 作为示例源文件
+```bash
+# 生成单个文件的png格式
+java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src/文件名.txt -tpng -o ../png
 
-
-```
-# 帮助
-java -jar "D:\service\my-tools\jar\plantuml.jar" -h
-
-# 为 `program_flowchart/src/总览.txt` 生成 png 格式输出到 `program_flowchart/png/总览.png`
-java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src/总览.txt -tpng -o ../png
-
-# 为 `program_flowchart/src/总览.txt` 生成 txt 格式输出到 `program_flowchart/png/总览.atxt`
-java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src/总览.txt -ttxt -o ../txt
-
-# 为 `program_flowchart/src` 目录下所有文件生成 png 格式输出到 `program_flowchart/png`
+# 批量生成所有文件
 java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o ../png
 ```
 
@@ -125,14 +115,17 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
 - 执行集成测试验证模块间交互
 - 确保所有测试通过后才进入下一阶段
 
-### 4. 设计完成标准
+### 4. 设计完成验收标准
 
+**✅ 设计阶段检查清单：**
 - [ ] 总览流程图已绘制并涵盖所有主要功能
 - [ ] 复杂模块已提取为独立流程图
 - [ ] 各模块接口定义清晰（输入/输出/处理逻辑）
 - [ ] 关键决策点已明确定义
 - [ ] 异常处理路径已考虑
 - [ ] 模块间依赖关系已明确
+
+**注意：设计阶段必须完全通过上述检查后才能进入编码阶段**
 
 ## 版本控制与分支管理
 
@@ -189,25 +182,11 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
 #### Changelog 格式示例
 ```markdown
 ## [Unreleased]
-### 新增 (Added)
-- 开发中的新功能
+### 新增 (Added) / 变更 (Changed) / 修复 (Fixed) / 移除 (Removed)
+- 变更内容描述
 
-## [0.2.0] - 2025-01-30
-### 新增 (Added)
-- 已发布的新功能描述
-
-### 变更 (Changed)  
-- 现有功能的变更
-
-### 修复 (Fixed)
-- 错误修复描述
-
-### 移除 (Removed)
-- 移除的功能
-
-## [0.1.0] - 2025-01-29
-### 新增 (Added)
-- 初始版本功能
+## [版本号] - 日期
+- 具体变更内容
 ```
 
 ## 质量保证要求

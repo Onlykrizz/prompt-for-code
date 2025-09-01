@@ -176,6 +176,22 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
 
 ### 提交与文档更新
 
+#### 分步提交规范
+在开发过程中必须遵循以下提交策略：
+
+1. **任务开始检查**
+   - 检查claude-memory目录下所有以CLAUDE开头的文件是否有未提交的变更
+   - 如有未提交改动，分析改动内容并立即提交，在提交信息中描述当前状态
+
+2. **步骤完成提交**
+   - 每完成一个步骤的一批文档修改后，都要先进行仓库提交再进行下一步
+   - 确保每个提交都是原子性的，只包含相关的变更
+   - 提交信息要清晰描述完成的步骤和变更内容
+
+3. **CHANGELOG维护检查**
+   - 在每次提交前检查仓库变更状态，分析变更内容以决定是否需要对CHANGELOG进行修改
+   - 不论是什么任务，都应该维护CHANGELOG记录重要变更
+
 #### 完成后的必要操作
 在项目开始时和每次设计、开发、测试完成后都必须：
 
@@ -193,6 +209,13 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
    - 遵循[语义化版本](https://semver.mdn.cn/)规范
    - 记录版本号、日期、变更类型和内容
    - 更新 CHANGELOG.md 文件
+
+4. **任务完成后清理**
+   - 维护CHANGELOG并进行提交，在这一次提交之后：
+     - 删除CLAUDE.md中**本次任务内容**开始后面的所有内容
+     - 删除now-task.md中除了第一行之外的所有内容  
+     - 删除undetermined.md文件（如存在）
+     - 结束掉CHANGELOG中本次的Unreleased，分析应该更新哪一段版本号，更新相应的版本号，添加新的Unreleased
 
 #### Changelog 维护规则
 

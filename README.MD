@@ -4,6 +4,7 @@
 
 ## 项目结构
 
+- **claude-memory**: AI agent指令和内存相关文档
 - **general/**: 通用模板和指南  
 - **rust/**: Rust 语言的各种项目类型模板
 - **specialization-agents/**: 专门化的开发者子代理定义

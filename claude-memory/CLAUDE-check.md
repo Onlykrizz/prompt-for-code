@@ -65,7 +65,7 @@
 
 ### 🧹 任务完成后清理检查
 - [ ] **CHANGELOG版本结束** - 维护CHANGELOG并进行提交后，结束当前Unreleased版本，更新版本号，添加新的Unreleased
-- [ ] **清理CLAUDE.md** - 删除CLAUDE.md中**本次任务内容**开始后面的所有内容
+- [ ] **清理CLAUDE.md** - 删除CLAUDE.md中**本次任务内容**标题下一行开始的所有内容，保留标题本身
 - [ ] **清理now-task.md** - 删除now-task.md中除了第一行之外的所有内容
 - [ ] **删除undetermined.md** - 删除undetermined.md文件（如存在）
 

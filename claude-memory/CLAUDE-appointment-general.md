@@ -125,7 +125,7 @@
 
 4. **任务完成后清理**
    - 维护CHANGELOG并进行提交，在这一次提交之后：
-     - 删除CLAUDE.md中**本次任务内容**开始后面的所有内容
+     - 删除CLAUDE.md中**本次任务内容**标题下一行开始的所有内容，保留标题本身
      - 删除now-task.md中除了第一行之外的所有内容  
      - 删除undetermined.md文件（如存在）
      - 结束掉CHANGELOG中本次的Unreleased，分析应该更新哪一段版本号，更新相应的版本号，添加新的Unreleased

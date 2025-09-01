@@ -4,7 +4,8 @@
 
 ### 📋 每次任务开始必检项
 - [ ] **检阅@CLAUDE.md** - 确保理解最新的项目规范和要求
-- [ ] **检查CLAUDE文件变更状态** - 检查claude-memory目录下所有以CLAUDE开头的文件在上次git提交后是否有未提交的变更
+- [ ] **完成任务内容预处理** - 分析now-task.md，生成optimized-task.md，确保任务目标清晰可执行
+- [ ] **检查CLAUDE文件变更状态** - 检查claude-memory目录下所有以CLAUDE开头的文件和now-task.md在上次git提交后是否有未提交的变更
 - [ ] **处理未提交变更** - 如有未提交改动，分析改动内容并进行提交，在提交信息中描述当前状态
 - [ ] **识别任务复杂度** - 判断是否需要使用Sequential-Thinking进行结构化分析
 - [ ] **获取实时时间** - 当任务涉及时间时，执行: `python -c "import datetime; print(datetime.datetime.today())"`
@@ -65,8 +66,8 @@
 
 ### 🧹 任务完成后清理检查
 - [ ] **CHANGELOG版本结束** - 维护CHANGELOG并进行提交后，结束当前Unreleased版本，更新版本号，添加新的Unreleased
-- [ ] **清理CLAUDE.md** - 删除CLAUDE.md中**本次任务内容**标题下一行开始的所有内容，保留标题本身
 - [ ] **清理now-task.md** - 删除now-task.md中除了第一行之外的所有内容
+- [ ] **删除优化任务文件** - 删除optimized-task.md文件（如存在）
 - [ ] **删除undetermined.md** - 删除undetermined.md文件（如存在）
 
 ### ✅ 质量保证检查

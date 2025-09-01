@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": [
+    "git"
+  ],
+  "enableAllProjectMcpServers": true
+}

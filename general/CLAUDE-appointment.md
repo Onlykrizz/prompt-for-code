@@ -15,6 +15,26 @@
 - **禁止假设时间**：不要使用硬编码的时间或假设的日期
 - **时间格式**：根据具体需求使用适当的时间格式
 
+### 编码原则要求
+作为专业开发工程师，必须内化并严格遵循以下核心编程原则，确保每次输出和建议都体现这些理念：
+
+#### 🎯 核心编程原则
+- **简单至上 (KISS)**: 追求代码和设计的极致简洁与直观，避免不必要的复杂性
+- **精益求精 (YAGNI)**: 仅实现当前明确所需的功能，抵制过度设计和不必要的未来特性预留
+- **杜绝重复 (DRY)**: 识别并消除代码或逻辑中的重复模式，提升复用性
+- **坚实基础 (SOLID)**:
+  - **S (单一职责)**: 各组件、类、函数只承担一项明确职责
+  - **O (开放/封闭)**: 功能扩展无需修改现有代码
+  - **L (里氏替换)**: 子类型可无缝替换其基类型
+  - **I (接口隔离)**: 接口应专一，避免"胖接口"
+  - **D (依赖倒置)**: 依赖抽象而非具体实现
+
+#### 📋 原则应用要求
+在设计、开发、测试的每个阶段都必须：
+1. **主动识别**: 发现现有代码中违背原则的现象
+2. **具体应用**: 明确说明如何在当前任务中体现原则
+3. **效果验证**: 验证原则应用带来的具体好处（如代码量减少、可读性提高、扩展性增强）
+
 ### 复杂问题分析规范
 - **问题复杂度识别**：当发现看似简单的问题实际包含多层含义、多个子目标或复杂业务逻辑时，必须使用分步思考方法
 - **Sequential-Thinking MCP服务**：对于复杂问题，必须调用sequential-thinking MCP服务进行结构化思考分析
@@ -45,7 +65,6 @@
 - **`CLAUDE.md`** - 项目指令和开发规范  
 - **`program_flowchart/src`** - 程序流程图文档目录
 - **`program_flowchart/png`** - 程序流程图 png 格式输出目录
-- **`program_flowchart/txt`** - 程序流程图 txt 格式输出目录
 
 #### 流程图组织结构
 - **分层设计**：总览图作为入口点，复杂流程提取为独立模块
@@ -60,24 +79,15 @@ program_flowchart/src
 
 #### 流程图规范
 - **设计语言**：必须使用[plantuml](https://plantuml.com/zh/)进行流程图设计
-- **及时生成**：必须在每一个流程图文件完成后立刻生成对应的png和txt文件
+- **及时生成**：必须在每一个流程图文件完成后立刻生成对应的png文件
 
-#### 流程图命令参考
+#### 流程图生成命令
 
-> 下面的命令参考中，以 `program_flowchart/src/总览.txt` 作为示例源文件
+```bash
+# 生成单个文件的png格式
+java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src/文件名.txt -tpng -o ../png
 
-
-```
-# 帮助
-java -jar "D:\service\my-tools\jar\plantuml.jar" -h
-
-# 为 `program_flowchart/src/总览.txt` 生成 png 格式输出到 `program_flowchart/png/总览.png`
-java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src/总览.txt -tpng -o ../png
-
-# 为 `program_flowchart/src/总览.txt` 生成 txt 格式输出到 `program_flowchart/png/总览.atxt`
-java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src/总览.txt -ttxt -o ../txt
-
-# 为 `program_flowchart/src` 目录下所有文件生成 png 格式输出到 `program_flowchart/png`
+# 批量生成所有文件
 java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o ../png
 ```
 
@@ -108,6 +118,18 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
 - 优先重构现有代码而非重写
 - 保持代码的可读性和可维护性
 
+#### 编码原则应用规范
+在编码阶段必须具体体现编程原则：
+- **KISS原则应用**: 每个函数、类、模块都要保持功能单一和实现简洁
+- **YAGNI原则应用**: 只实现当前迭代明确需要的功能，避免"也许以后需要"的设计
+- **DRY原则应用**: 主动识别并抽象重复代码，创建可复用的函数和模块
+- **SOLID原则应用**:
+  - 确保每个类和函数职责单一
+  - 使用抽象接口支持功能扩展
+  - 保持接口设计的专一性
+  - 依赖注入而非硬编码依赖
+- **原则验证**: 每完成一个模块，验证其是否体现了相应原则，记录具体改进效果
+
 #### 专业化代理选择规范
 - **技术栈匹配原则**：完成设计阶段后，进入编码实现时，必须根据项目特点和技术要求选择最合适的专业化开发代理
 - **Rust项目代理选择标准**：
@@ -125,14 +147,17 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
 - 执行集成测试验证模块间交互
 - 确保所有测试通过后才进入下一阶段
 
-### 4. 设计完成标准
+### 4. 设计完成验收标准
 
+**✅ 设计阶段检查清单：**
 - [ ] 总览流程图已绘制并涵盖所有主要功能
 - [ ] 复杂模块已提取为独立流程图
 - [ ] 各模块接口定义清晰（输入/输出/处理逻辑）
 - [ ] 关键决策点已明确定义
 - [ ] 异常处理路径已考虑
 - [ ] 模块间依赖关系已明确
+
+**注意：设计阶段必须完全通过上述检查后才能进入编码阶段**
 
 ## 版本控制与分支管理
 
@@ -151,6 +176,22 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
 
 ### 提交与文档更新
 
+#### 分步提交规范
+在开发过程中必须遵循以下提交策略：
+
+1. **任务开始检查**
+   - 检查claude-memory目录下所有以CLAUDE开头的文件和now-task.md是否有未提交的变更
+   - 如有未提交改动，分析改动内容并立即提交，在提交信息中描述当前状态
+
+2. **步骤完成提交**
+   - 每完成一个步骤的一批文档修改后，都要先进行仓库提交再进行下一步
+   - 确保每个提交都是原子性的，只包含相关的变更
+   - 提交信息要清晰描述完成的步骤和变更内容
+
+3. **CHANGELOG维护检查**
+   - 在每次提交前检查仓库变更状态，分析变更内容以决定是否需要对CHANGELOG进行修改
+   - 不论是什么任务，都应该维护CHANGELOG记录重要变更
+
 #### 完成后的必要操作
 在项目开始时和每次设计、开发、测试完成后都必须：
 
@@ -168,6 +209,12 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
    - 遵循[语义化版本](https://semver.mdn.cn/)规范
    - 记录版本号、日期、变更类型和内容
    - 更新 CHANGELOG.md 文件
+
+4. **任务完成后清理**
+   - 维护CHANGELOG并进行提交，在这一次提交之后：
+     - 删除now-task.md中除了第一行之外的所有内容  
+     - 删除undetermined.md文件（如存在）
+     - 结束掉CHANGELOG中本次的Unreleased，分析应该更新哪一段版本号，更新相应的版本号，添加新的Unreleased
 
 #### Changelog 维护规则
 
@@ -189,25 +236,11 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
 #### Changelog 格式示例
 ```markdown
 ## [Unreleased]
-### 新增 (Added)
-- 开发中的新功能
+### 新增 (Added) / 变更 (Changed) / 修复 (Fixed) / 移除 (Removed)
+- 变更内容描述
 
-## [0.2.0] - 2025-01-30
-### 新增 (Added)
-- 已发布的新功能描述
-
-### 变更 (Changed)  
-- 现有功能的变更
-
-### 修复 (Fixed)
-- 错误修复描述
-
-### 移除 (Removed)
-- 移除的功能
-
-## [0.1.0] - 2025-01-29
-### 新增 (Added)
-- 初始版本功能
+## [版本号] - 日期
+- 具体变更内容
 ```
 
 ## 质量保证要求
@@ -217,3 +250,5 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
 3. **流程验证**：新功能开发前验证现有流程图的准确性
 4. **代码审查**：合并前进行代码审查，确保质量
 5. **回滚准备**：保持可回滚状态，记录回滚步骤
+6. **编码原则检查**：定期检查代码是否违背KISS、YAGNI、DRY、SOLID原则
+7. **原则效果跟踪**：记录应用编码原则后的具体改进效果（代码量、性能、可维护性等指标）

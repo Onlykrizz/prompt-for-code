@@ -1,0 +1,34 @@
+[mcp_servers.mcp-router]
+command = "npx"
+args = ["-y", "@mcp_router/cli@latest", "connect"]
+env = { MCPR_TOKEN = "mcpr_pDUNmDWPJ9rYmWcQ0DT0gRmmpEJMc0Kt" }
+
+[mcp_servers.mcp-server-time]
+command = "/home/sayurinana/env-hub/py313free-for-mcp/bin/mcp-server-time"
+args = ["--local-timezone=Asia/Shanghai"]
+
+[mcp_servers.sequential-thinking]
+command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-server-sequential-thinking"
+
+[mcp_servers.filesystem]
+command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-server-filesystem"
+
+[mcp_servers.context7]
+command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/context7-mcp"
+
+[mcp_servers.playwright]
+command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-server-playwright"
+
+[mcp_servers.shrimp-task-manager]
+command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-shrimp-task-manager"
+env = { DATA_DIR = "/mnt/d/appdata/mcp-shrimp-task-manager/data", TEMPLATES_USE = "zh", ENABLE_GUI = "false" }
+
+[mcp_servers.deepwiki]
+command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-instruct"
+
+[mcp_servers.desktop-commander]
+command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/desktop-commander"
+
+[mcp_servers.serena]
+command = "/home/sayurinana/env-hub/serena/.venv/bin/serena"
+args = ["start-mcp-server"]

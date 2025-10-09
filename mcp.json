@@ -1,0 +1,72 @@
+{
+    "mcpServers": {
+        "sequential-thinking": {
+            "type": "stdio",
+            "command": "C:\\Program Files\\nodejs\\node.exe",
+            "args": [
+                "C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\@modelcontextprotocol\\server-sequential-thinking\\dist\\index.js"
+            ],
+            "env": {}
+        },
+        "filesystem": {
+            "type": "stdio",
+            "command": "C:\\Program Files\\nodejs\\node.exe",
+            "args": [
+                "C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\@modelcontextprotocol\\server-filesystem\\dist\\index.js"
+            ],
+            "env": {}
+        },
+        "mcp-server-time": {
+            "command": "D:\\service\\my-tools\\env_hub\\py313free-for-mcp\\Scripts\\python.exe",
+            "args": [
+                "-m",
+                "mcp_server_time",
+                "--local-timezone=Asia/Shanghai"
+            ]
+        },
+        "context7": {
+            "type": "stdio",
+            "command": "C:\\Program Files\\nodejs\\node.exe",
+            "args": [
+                "C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\@upstash\\context7-mcp\\dist\\index.js"
+            ],
+            "env": {}
+        },
+        "playwright": {
+            "type": "stdio",
+            "command": "C:\\Program Files\\nodejs\\node.exe",
+            "args": [
+                "C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\@playwright\\mcp\\dist\\index.js"
+            ],
+            "env": {}
+        },
+        "mcp-shrimp-task-manager": {
+            "type": "stdio",
+            "command": "C:\\Program Files\\nodejs\\node.exe",
+            "args": [
+                "C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\mcp-shrimp-task-manager\\dist\\index.js"
+            ],
+            "env": {
+                "DATA_DIR": "D:\\appdata\\mcp-shrimp-task-manager\\data",
+                "TEMPLATES_USE": "zh",
+                "ENABLE_GUI": "false"
+            }
+        },
+        "mcp-deepwiki": {
+            "type": "stdio",
+            "command": "C:\\Program Files\\nodejs\\node.exe",
+            "args": [
+                "C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\mcp-deepwiki\\dist\\index.js"
+            ],
+            "env": {}
+        },
+        "desktop-commander": {
+            "type": "stdio",
+            "command": "C:\\Program Files\\nodejs\\node.exe",
+            "args": [
+                "C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\@wonderwhy-er\\desktop-commander\\dist\\index.js"
+            ],
+            "env": {}
+        }
+    }
+}

@@ -1,10 +1,10 @@
 # 概述
 
-把AI_AGENT-user.md复制到~/.ai-agent/AI_AGENT.md
+把AI-AGENT_user.md复制到~/.ai-agent/AI_AGENT.md
 
-把AI_AGENT-project.md复制为项目根目录下的AI_AGENT.md
+把AI-AGENT_project.md复制为项目根目录下的AI_AGENT.md
 
-AI_AGENT-appointment.md等其他文件直接复制到项目根目录下的ai-agent-memory目录下，例如ai-agent-memory/AI_AGENT-appointment.md
+AI-AGENT_appointment.md等其他文件直接复制到项目根目录下的ai-agent-memory目录下，例如ai-agent-memory/AI-AGENT_appointment.md
 
 ## 快捷代码片段
 

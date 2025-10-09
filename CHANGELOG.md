@@ -19,8 +19,8 @@
 ## [0.6.0] - 2025-08-30
 
 ### 新增 (Added)
-- 在AI_AGENT-appointment.md中添加了复杂问题分析规范，要求对复杂问题使用sequential-thinking MCP服务
-- 在AI_AGENT-appointment.md中添加了专业化代理选择规范，明确不同Rust项目类型对应的代理选择标准
+- 在AI-AGENT_appointment.md中添加了复杂问题分析规范，要求对复杂问题使用sequential-thinking MCP服务
+- 在AI-AGENT_appointment.md中添加了专业化代理选择规范，明确不同Rust项目类型对应的代理选择标准
 - 完善了编码阶段的指导原则，强化了技术栈匹配和代理协作开发的要求
 
 ### 变更 (Changed)
@@ -44,7 +44,7 @@
 
 ### 新增 (Added)
 - 添加了项目级别的通用代理配置文件（AI_AGENT.md）
-- 添加了通用约定配置文件（AI_AGENT-appointment.md）
+- 添加了通用约定配置文件（AI-AGENT_appointment.md）
 - 添加了general目录下的项目和用户级配置文件
 - 添加了专业化代理目录结构（specialization-agents/）
 
@@ -62,7 +62,7 @@
 ## [0.2.0] - 2025-08-30
 
 ### 新增 (Added)
-- 完善了 AI_AGENT-appointment.md 文档，添加了完整的开发流程指导
+- 完善了 AI-AGENT_appointment.md 文档，添加了完整的开发流程指导
 - 添加了 Git 分支管理策略和规范
 - 添加了提交信息规范（约定式提交）
 - 添加了 Changelog 维护指南和格式示例（包含 [Unreleased] 使用说明）
@@ -81,5 +81,5 @@
 ### 新增 (Added)
 - 初始项目结构
 - 基础 Rust 开发模板文档
-- 通用指令文档（AI_AGENT 主指令、AI_AGENT-appointment.md）
+- 通用指令文档（AI_AGENT 主指令、AI-AGENT_appointment.md）
 - PlantUML 流程图设计规范

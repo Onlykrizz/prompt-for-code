@@ -31,7 +31,7 @@ prompt-for-code/
   - 待定项处理流程（使用undetermined.md记录需要用户确认的问题）
 - **意义**：确保所有任务执行都遵循统一的高质量标准
 
-#### AI_AGENT-user.md - 全局用户规范
+#### AI-AGENT_user.md - 全局用户规范
 - **作用**：定义所有项目都必须遵守的基础规则
 - **核心内容**：
   - 交流语言：永远使用简体中文
@@ -41,7 +41,7 @@ prompt-for-code/
   - Python规范：强类型、使用uv、.venv虚拟环境
 - **意义**：建立统一的代码质量标准和开发规范
 
-#### AI_AGENT-appointment-general.md - 通用任务执行规范
+#### AI-AGENT_appointment-general.md - 通用任务执行规范
 - **作用**：定义非编程任务的执行流程
 - **核心内容**：
   - 前置准备：文档检阅、时间处理规范、复杂问题分析
@@ -51,7 +51,7 @@ prompt-for-code/
   - 任务完成清理：清理now-task.md、undetermined.md、更新版本号
 - **意义**：确保通用任务也遵循结构化、可追溯的执行流程
 
-#### AI_AGENT-appointment-program.md - 开发任务执行规范
+#### AI-AGENT_appointment-program.md - 开发任务执行规范
 - **作用**：定义编程开发任务的专业执行流程
 - **核心内容**：
   - 编码原则：KISS、YAGNI、DRY、SOLID原则
@@ -61,7 +61,7 @@ prompt-for-code/
   - Git工作流程：分支策略、约定式提交、语义化版本
 - **意义**：将软件工程最佳实践融入开发流程，确保代码质量
 
-#### AI_AGENT-appointment.md - 代理选择规范
+#### AI-AGENT_appointment.md - 代理选择规范
 - **作用**：定义专业化代理的选择标准
 - **核心内容**：
   - Rust项目代理选择（cli/web/library/crossplatform/performance/programmer）
@@ -69,7 +69,7 @@ prompt-for-code/
   - 代理使用原则：优先专业化、支持协作开发
 - **意义**：确保任务被分配给最合适的专业代理
 
-#### AI_AGENT-check.md - 检查清单
+#### AI-AGENT_check.md - 检查清单
 - **作用**：提供任务各阶段的质量检查清单
 - **核心内容**：
   - 任务开始前检查（文档检阅、分步提交计划、任务预处理）
@@ -80,7 +80,7 @@ prompt-for-code/
 
 #### now-task.md - 当前任务描述
 - **作用**：记录当前正在执行的任务内容
-- **当前任务**：将AI_AGENT-appointment-program.md中的要求融入到specialization-agents下的子代理中，必须保留"核心开发流程"和"版本控制与分支管理"的内容
+- **当前任务**：将AI-AGENT_appointment-program.md中的要求融入到specialization-agents下的子代理中，必须保留"核心开发流程"和"版本控制与分支管理"的内容
 - **意义**：明确当前工作目标，避免任务偏离
 
 #### undetermined-template.md - 待定项模板
@@ -158,8 +158,8 @@ prompt-for-code/
 - **执行层**：specialization-agents提供具体执行者
 
 ### 2. 关注点分离
-- **通用规范**（AI_AGENT-user.md）：适用于所有项目
-- **任务类型规范**（AI_AGENT-appointment-general.md vs AI_AGENT-appointment-program.md）：区分通用任务和编程任务
+- **通用规范**（AI-AGENT_user.md）：适用于所有项目
+- **任务类型规范**（AI-AGENT_appointment-general.md vs AI-AGENT_appointment-program.md）：区分通用任务和编程任务
 - **技术栈规范**（specialization-agents）：特定技术领域的专业指导
 
 ### 3. 质量保证机制
@@ -182,7 +182,7 @@ AI_AGENT.md (入口)
 ai-agent-memory/AI_AGENT.md (总控)
     ↓
 ┌─────────────────┬─────────────────────┬────────────────┐
-│ AI_AGENT-user.md  │ AI_AGENT-appointment  │ AI_AGENT-check.md│
+│ AI-AGENT_user.md  │ AI-AGENT_appointment  │ AI-AGENT_check.md│
 │ (全局规范)      │ (执行流程)          │ (质量检查)     │
 └─────────────────┴─────────────────────┴────────────────┘
                     ↓
@@ -200,7 +200,7 @@ ai-agent-memory/AI_AGENT.md (总控)
                     ↓
         用户确认 → optimized-task.md
                     ↓
-        选择专业化代理 (AI_AGENT-appointment.md)
+        选择专业化代理 (AI-AGENT_appointment.md)
                     ↓
     ┌───────────────────────────────────┐
     │ specialization-agents/*          │
@@ -225,7 +225,7 @@ ai-agent-memory/AI_AGENT.md (总控)
 
 ## 当前任务的意义
 
-当前任务（融入AI_AGENT-appointment-program.md到specialization-agents）的目标是：
+当前任务（融入AI-AGENT_appointment-program.md到specialization-agents）的目标是：
 - 将"核心开发流程"和"版本控制与分支管理"等编程规范融入到每个专业化代理中
 - 确保每个代理不仅懂技术实现，还懂完整的开发流程和质量保证
 - 实现从"写代码"到"专业开发"的升级

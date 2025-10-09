@@ -2,9 +2,9 @@
 
 ## 核心流程指引
 
-所有过程都应遵循@AI_AGENT-appointment.md（开发任务）或@AI_AGENT-appointment-general.md（通用任务）。
+所有过程都应遵循@AI-AGENT_appointment.md（开发任务）或@AI-AGENT_appointment-general.md（通用任务）。
 
-各类过程开始时、结束时都应检查@AI_AGENT-check.md。
+各类过程开始时、结束时都应检查@AI-AGENT_check.md。
 
 重要！！！：必须先完成**任务内容预处理**，且全过程遵循**任务管理和分步提交要求**。
 

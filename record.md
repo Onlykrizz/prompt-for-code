@@ -2,28 +2,28 @@
 
 ## 项目概述
 
-这是一个构建用于 Claude Code 的提示词模板项目，旨在为不同类型的开发任务提供专业化的AI代理指导文档。
+这是一个构建用于通用 AI 代理的提示词模板项目，旨在为不同类型的开发任务提供专业化的AI代理指导文档。
 
 ## 项目结构分析
 
 ```
 prompt-for-code/
-├── claude-memory/          # AI核心指令和记忆系统
+├── ai-agent-memory/          # AI核心指令和记忆系统
 ├── general/               # 通用模板和指南
 ├── rust/                  # Rust语言项目模板集合
 ├── specialization-agents/ # 专业化开发代理定义
-├── CLAUDE.md             # 项目入口配置
+├── AI_AGENT.md             # 项目入口配置
 ├── README.MD             # 项目说明文档
 └── CHANGELOG.md          # 变更日志
 ```
 
 ## 核心文档作用分析
 
-### 1. claude-memory目录 - 核心指令系统
+### 1. ai-agent-memory目录 - 核心指令系统
 
 这是整个项目的**核心控制中心**，包含AI代理的工作流程、规范和记忆系统。
 
-#### CLAUDE.md - 总控制文档
+#### AI_AGENT.md - 总控制文档
 - **作用**：定义AI代理的整体工作流程和强制规范
 - **核心内容**：
   - 任务管理和分步提交要求（强制使用TodoWrite，禁止批量提交）
@@ -31,7 +31,7 @@ prompt-for-code/
   - 待定项处理流程（使用undetermined.md记录需要用户确认的问题）
 - **意义**：确保所有任务执行都遵循统一的高质量标准
 
-#### CLAUDE-user.md - 全局用户规范
+#### AI_AGENT-user.md - 全局用户规范
 - **作用**：定义所有项目都必须遵守的基础规则
 - **核心内容**：
   - 交流语言：永远使用简体中文
@@ -41,7 +41,7 @@ prompt-for-code/
   - Python规范：强类型、使用uv、.venv虚拟环境
 - **意义**：建立统一的代码质量标准和开发规范
 
-#### CLAUDE-appointment-general.md - 通用任务执行规范
+#### AI_AGENT-appointment-general.md - 通用任务执行规范
 - **作用**：定义非编程任务的执行流程
 - **核心内容**：
   - 前置准备：文档检阅、时间处理规范、复杂问题分析
@@ -51,7 +51,7 @@ prompt-for-code/
   - 任务完成清理：清理now-task.md、undetermined.md、更新版本号
 - **意义**：确保通用任务也遵循结构化、可追溯的执行流程
 
-#### CLAUDE-appointment-program.md - 开发任务执行规范
+#### AI_AGENT-appointment-program.md - 开发任务执行规范
 - **作用**：定义编程开发任务的专业执行流程
 - **核心内容**：
   - 编码原则：KISS、YAGNI、DRY、SOLID原则
@@ -61,7 +61,7 @@ prompt-for-code/
   - Git工作流程：分支策略、约定式提交、语义化版本
 - **意义**：将软件工程最佳实践融入开发流程，确保代码质量
 
-#### CLAUDE-appointment.md - 代理选择规范
+#### AI_AGENT-appointment.md - 代理选择规范
 - **作用**：定义专业化代理的选择标准
 - **核心内容**：
   - Rust项目代理选择（cli/web/library/crossplatform/performance/programmer）
@@ -69,18 +69,18 @@ prompt-for-code/
   - 代理使用原则：优先专业化、支持协作开发
 - **意义**：确保任务被分配给最合适的专业代理
 
-#### CLAUDE-check.md - 检查清单
+#### AI_AGENT-check.md - 检查清单
 - **作用**：提供任务各阶段的质量检查清单
 - **核心内容**：
   - 任务开始前检查（文档检阅、分步提交计划、任务预处理）
   - 设计阶段检查（流程完整性、接口定义、依赖关系）
   - 执行阶段检查（编码原则、分步提交、文档同步）
-  - 完成后检查（CLAUDE.md更新、版本控制、任务清理）
+  - 完成后检查（AI_AGENT.md更新、版本控制、任务清理）
 - **意义**：通过系统化检查清单防止遗漏关键步骤
 
 #### now-task.md - 当前任务描述
 - **作用**：记录当前正在执行的任务内容
-- **当前任务**：将CLAUDE-appointment-program.md中的要求融入到specialization-agents下的子代理中，必须保留"核心开发流程"和"版本控制与分支管理"的内容
+- **当前任务**：将AI_AGENT-appointment-program.md中的要求融入到specialization-agents下的子代理中，必须保留"核心开发流程"和"版本控制与分支管理"的内容
 - **意义**：明确当前工作目标，避免任务偏离
 
 #### undetermined-template.md - 待定项模板
@@ -98,13 +98,13 @@ prompt-for-code/
 
 ### 3. rust目录 - Rust项目知识库
 
-- **CLAUDE_CLI应用模板.md**：命令行工具开发规范（clap、anyhow、配置管理）
-- **CLAUDE_Web服务模板.md**：Web服务开发规范（axum/actix-web、异步、数据库）
-- **CLAUDE_库项目模板.md**：库开发规范（API设计、feature管理、版本兼容性）
-- **CLAUDE_跨平台项目模板.md**：跨平台开发规范（条件编译、平台抽象）
-- **CLAUDE_高性能系统项目模板.md**：性能优化规范（内存优化、并发、SIMD）
+- **AI_AGENT_CLI应用模板.md**：命令行工具开发规范（clap、anyhow、配置管理）
+- **AI_AGENT_Web服务模板.md**：Web服务开发规范（axum/actix-web、异步、数据库）
+- **AI_AGENT_库项目模板.md**：库开发规范（API设计、feature管理、版本兼容性）
+- **AI_AGENT_跨平台项目模板.md**：跨平台开发规范（条件编译、平台抽象）
+- **AI_AGENT_高性能系统项目模板.md**：性能优化规范（内存优化、并发、SIMD）
 - **Rust学习资源与实践指南.md**：学习路径和资源推荐
-- **Rust项目开发规范-精简版CLAUDE.md指南.md**：开发规范总结
+- **Rust项目开发规范-精简版AI_AGENT.md指南.md**：开发规范总结
 - **Rust项目结构模板与配置指南.md**：项目结构最佳实践
 - **Rust项目规模划分与特点.md**：项目规模分类标准
 - **优秀Rust项目的关键特征与最佳实践.md**：质量标准参考
@@ -134,9 +134,9 @@ prompt-for-code/
 
 ### 5. 项目级文档
 
-#### CLAUDE.md - 项目入口
-- **作用**：项目级配置入口，指向claude-memory目录
-- **内容**：要求必须先阅读claude-memory下的全部内容
+#### AI_AGENT.md - 项目入口
+- **作用**：项目级配置入口，指向ai-agent-memory目录
+- **内容**：要求必须先阅读ai-agent-memory下的全部内容
 - **意义**：确保AI代理加载完整的指令系统
 
 #### README.MD - 项目说明
@@ -153,13 +153,13 @@ prompt-for-code/
 ## 项目设计哲学
 
 ### 1. 分层架构设计
-- **核心层**：claude-memory定义通用规范和工作流程
+- **核心层**：ai-agent-memory定义通用规范和工作流程
 - **知识层**：rust目录提供技术知识库
 - **执行层**：specialization-agents提供具体执行者
 
 ### 2. 关注点分离
-- **通用规范**（CLAUDE-user.md）：适用于所有项目
-- **任务类型规范**（CLAUDE-appointment-general.md vs CLAUDE-appointment-program.md）：区分通用任务和编程任务
+- **通用规范**（AI_AGENT-user.md）：适用于所有项目
+- **任务类型规范**（AI_AGENT-appointment-general.md vs AI_AGENT-appointment-program.md）：区分通用任务和编程任务
 - **技术栈规范**（specialization-agents）：特定技术领域的专业指导
 
 ### 3. 质量保证机制
@@ -177,12 +177,12 @@ prompt-for-code/
 ## 文档间的协作关系
 
 ```
-CLAUDE.md (入口)
+AI_AGENT.md (入口)
     ↓
-claude-memory/CLAUDE.md (总控)
+ai-agent-memory/AI_AGENT.md (总控)
     ↓
 ┌─────────────────┬─────────────────────┬────────────────┐
-│ CLAUDE-user.md  │ CLAUDE-appointment  │ CLAUDE-check.md│
+│ AI_AGENT-user.md  │ AI_AGENT-appointment  │ AI_AGENT-check.md│
 │ (全局规范)      │ (执行流程)          │ (质量检查)     │
 └─────────────────┴─────────────────────┴────────────────┘
                     ↓
@@ -200,7 +200,7 @@ claude-memory/CLAUDE.md (总控)
                     ↓
         用户确认 → optimized-task.md
                     ↓
-        选择专业化代理 (CLAUDE-appointment.md)
+        选择专业化代理 (AI_AGENT-appointment.md)
                     ↓
     ┌───────────────────────────────────┐
     │ specialization-agents/*          │
@@ -225,7 +225,7 @@ claude-memory/CLAUDE.md (总控)
 
 ## 当前任务的意义
 
-当前任务（融入CLAUDE-appointment-program.md到specialization-agents）的目标是：
+当前任务（融入AI_AGENT-appointment-program.md到specialization-agents）的目标是：
 - 将"核心开发流程"和"版本控制与分支管理"等编程规范融入到每个专业化代理中
 - 确保每个代理不仅懂技术实现，还懂完整的开发流程和质量保证
 - 实现从"写代码"到"专业开发"的升级

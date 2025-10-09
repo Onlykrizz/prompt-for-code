@@ -1,4 +1,4 @@
-# Rust项目开发规范 - 精简版CLAUDE.md指南
+# Rust项目开发规范 - 精简版AI_AGENT.md指南
 
 ## 核心开发原则
 

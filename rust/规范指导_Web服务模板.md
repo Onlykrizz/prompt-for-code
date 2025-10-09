@@ -1,6 +1,6 @@
-# CLAUDE.md - Web服务开发规范
+# AI_AGENT.md - Web服务开发规范
 
-这是针对Rust Web应用和API服务开发的Claude Code指导文档。
+这是针对Rust Web应用和API服务开发的通用AI代理指导文档。
 
 ## 项目类型
 Web服务/API服务

@@ -1,6 +1,6 @@
-# CLAUDE.md - CLI应用开发规范
+# AI_AGENT.md - CLI应用开发规范
 
-这是针对Rust命令行工具开发的Claude Code指导文档。
+这是针对Rust命令行工具开发的通用AI代理指导文档。
 
 ## 项目类型
 命令行应用程序(CLI Tool)

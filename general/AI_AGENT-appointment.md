@@ -3,7 +3,7 @@
 ## 前置准备
 
 ### 文档检阅要求
-- **必须在每次开始设计、开发、测试等行为之前，重新检阅 @CLAUDE.md**
+- **必须在每次开始设计、开发、测试等行为之前，重新检阅 @AI_AGENT.md**
 - 确保理解最新的项目规范和要求
 - 检查是否有新的约定或变更
 
@@ -50,7 +50,7 @@
 遵循**设计优先**的开发原则，确保在编写代码前完成充分的流程设计：
 
 ```
-检阅@CLAUDE.md → 程序流程设计 → 编写程序代码 → 测试验证 → 文档更新 → 提交变更
+检阅@AI_AGENT.md → 程序流程设计 → 编写程序代码 → 测试验证 → 文档更新 → 提交变更
 ```
 
 ### 1. 程序流程设计阶段
@@ -62,7 +62,7 @@
 ```
 
 #### 涉及文件
-- **`CLAUDE.md`** - 项目指令和开发规范  
+- **`AI_AGENT.md`** - 项目指令和开发规范  
 - **`program_flowchart/src`** - 程序流程图文档目录
 - **`program_flowchart/png`** - 程序流程图 png 格式输出目录
 
@@ -180,7 +180,7 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
 在开发过程中必须遵循以下提交策略：
 
 1. **任务开始检查**
-   - 检查claude-memory目录下所有以CLAUDE开头的文件和now-task.md是否有未提交的变更
+   - 检查ai-agent-memory目录下所有以AI_AGENT开头的文件和now-task.md是否有未提交的变更
    - 如有未提交改动，分析改动内容并立即提交，在提交信息中描述当前状态
 
 2. **步骤完成提交**
@@ -195,8 +195,8 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
 #### 完成后的必要操作
 在项目开始时和每次设计、开发、测试完成后都必须：
 
-1. **更新 CLAUDE.md**
-   - 把相关的变动写入到 @CLAUDE.md 中
+1. **更新 AI_AGENT.md**
+   - 把相关的变动写入到 @AI_AGENT.md 中
    - 记录新增的约定或规范
    - 更新已变更的流程或要求
 
@@ -246,7 +246,7 @@ java -jar "D:\service\my-tools\jar\plantuml.jar" program_flowchart/src -tpng -o 
 ## 质量保证要求
 
 1. **文档同步**：代码变更时同步更新相关设计文档
-2. **决策记录**：重要设计决策需在CLAUDE.md中记录原因  
+2. **决策记录**：重要设计决策需在AI_AGENT.md中记录原因  
 3. **流程验证**：新功能开发前验证现有流程图的准确性
 4. **代码审查**：合并前进行代码审查，确保质量
 5. **回滚准备**：保持可回滚状态，记录回滚步骤

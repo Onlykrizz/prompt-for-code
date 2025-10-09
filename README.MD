@@ -1,10 +1,10 @@
 # 项目概述
 
-这是一个构建用于 Claude Code 的提示词模板的项目。
+这是一个面向通用 AI 代理的提示词模板与作业规范项目。
 
 ## 项目结构
 
-- **claude-memory**: AI agent指令和内存相关文档
+- **ai-agent-memory/**: AI 代理指令与记忆管理相关文档
 - **general/**: 通用模板和指南  
 - **rust/**: Rust 语言的各种项目类型模板
 - **specialization-agents/**: 专门化的开发者子代理定义

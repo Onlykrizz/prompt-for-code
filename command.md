@@ -26,6 +26,7 @@ uv run serena start-mcp-server
 ```
 
 ```
+alias cx='codex --ask-for-approval never --sandbox danger-full-access'
 export EDITOR=vim
 export http_proxy=http://127.0.0.1:10809
 export https_proxy=http://127.0.0.1:10809

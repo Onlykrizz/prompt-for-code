@@ -1,11 +1,17 @@
-# AI_AGENT.md
+# AI-AGENT.md（项目级模板）
 
-!!!非常重要：在着手任何任务之前，必须确保已经完整阅读 `ai-agent-memory/` 目录中的全部指南，确保理解项目规范、流程要求与当前任务背景。
+!!! 在开始任何工作前，必须先阅读本文件，并逐一查阅`ai-agent-memory/`目录中的所有指引。
 
-关键参考文档：
-- `ai-agent-memory/AI-AGENT_appointment-programmer.md`：开发类任务的流程规范与检查项
-- `ai-agent-memory/AI-AGENT_appointment-general.md`：非开发任务的通用流程指引
-- `ai-agent-memory/AI-AGENT_check.md`：全流程检查清单与完成标准
+## 快速指引
+- `ai-agent-memory/AI-AGENT_general.md`：通用任务的完整流程与工作状态记录规范。
+- `ai-agent-memory/AI-AGENT_programming.md`：编程/开发任务的额外要求、测试与提交规范。
+- `ai-agent-memory/AI-AGENT_check.md`：六大环节的核对清单，确保每一步可追溯、可验证。
+- `ai-agent-memory/now-task.md`：待用户填写的任务描述模板，执行前必须完成“任务内容预处理”。
 
-所有阶段性成果、关键决策和新增约定都需要记录在本文件以及相应的规范文档中，以保持信息同步与可追溯。
+## 工作要求摘要
+1. **工作状态同步**：首次进入“任务前置准备”环节时创建`AI-AGENT_working-status.md`，按环节维护记录。
+2. **流程驱动执行**：严格遵循“任务前置准备 → 流程设计 → 任务主体流程循环 → 验证结果 → 文档更新 → 收尾”的顺序执行，返工时需回退环节并记录原因。
+3. **信息留痕**：所有阶段性成果、关键决策、风险与约定必须记录在相应文档中（含本文件、流程设计文档、`optimized-task.md`等）。
+4. **交付完成标准**：通过`AI-AGENT_check.md`逐环节核对，验证交付物满足成功标准后方可收尾。
 
+如需新增或调整项目约定，请在完成任务后同步更新本文件与模板库中的原始文档。

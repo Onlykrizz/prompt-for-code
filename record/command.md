@@ -14,6 +14,7 @@ npm install -g open-websearch@latest
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install --git https://github.com/astral-sh/uv uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
 uv python install cpython-3.13.8+freethreaded-linux-x86_64-gnu
 uv venv --python cpython-3.13.8+freethreaded-linux-x86_64-gnu py313free-for-mcp
 

@@ -3,6 +3,7 @@
 2025-10-11 19:26:59 (Asia/Shanghai),切换,验证结果,将对照`AI-AGENT_check.md`与新文档内容进行核对，确认引用链与安全要求生效。
 2025-10-11 19:33:00 (Asia/Shanghai),完成,验证结果,已确认新规文档格式正确并在`AI-AGENT_general/README/check`等位置建立引用，无需追加调整，可转入文档更新归档。
 2025-10-11 19:34:02 (Asia/Shanghai),切换,文档更新,整理提交范围并准备将新增指引与调研笔记纳入版本控制。
+2025-10-11 19:36:41 (Asia/Shanghai),完成,文档更新,已提交`AI-AGENT_mcp-rules.md`及相关引用调整，调研笔记同步归档，进入收尾准备。
 2025-10-11 19:16:51 (Asia/Shanghai),开工,任务主体流程循环-文档撰写,将依据调研笔记编写`general/AI-AGENT_mcp-rules.md`并更新关联指引文档。
 2025-10-11 19:15:43 (Asia/Shanghai),总结,任务主体流程循环-资料调研,已整理五项MCP官方文档并记录关键信息至`ai-agent-output/mcp-research-notes.md`，准备进入文档撰写子环节。
 2025-10-11 19:06:41 (Asia/Shanghai),开工,任务主体流程循环-资料调研,即将使用web-search等工具检索五项MCP官方资料并记录要点，为后续撰写服务指引做准备。

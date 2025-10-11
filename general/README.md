@@ -10,6 +10,7 @@
    - 在复制完成后，项目中的`AI-AGENT.md`会提醒代理优先阅读`ai-agent-memory/`内的指引。
    - `AI-AGENT_general.md`涵盖所有通用任务流程；如执行编程任务，再结合`AI-AGENT_programming.md`。
    - `AI-AGENT_check.md`提供阶段性检查清单，确保每个环节的工作质量。
+   - `AI-AGENT_mcp-rules.md`汇总常用MCP服务的调用规范、安全边界与记录要求。
    - `now-task.md`是待用户填写的任务输入模板，执行完毕需恢复为原始状态。
 
 3. **工作状态记录**

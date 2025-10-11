@@ -15,6 +15,8 @@
 
 3. **工作状态记录**
    - 按`AI-AGENT_general.md`中的规范，新建`AI-AGENT_working-status.csv`并维护环节记录。
+   - 将`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.md`等辅助文档统一存放至`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录，保持任务简述8-20字。
+   - 提交前务必执行`git add .`以追踪全部未忽略文件，并在更新工作状态后优先维护`CHANGELOG.md`再进行提交。
    - 请确保每次复制后指引内容保持最新，若有新约定需回写到本目录。
 
 > 提示：若需要额外的运行脚本或配置片段，请在目标项目中自行维护，避免污染模板目录。

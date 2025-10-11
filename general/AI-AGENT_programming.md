@@ -11,6 +11,7 @@
   - 若脚本或依赖异常，优先修复脚本再继续任务。
 - **时间引用**：需记录时间时调用`mcp-server-time`获取实时值。
 - **Sequential-Thinking**：当需求涉及多模块、多方案或复杂业务逻辑时，必须调用Sequential-Thinking服务完成结构化分析。
+- **文档归档**：`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.md`等辅助文档统一存放于`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录，任务简述需控制在8-20字。
 
 ## 专业化代理与分工
 - 根据任务类型选择合适的专业化代理（如`rust-web-developer`、`rust-library-developer`等），必要时在不同阶段切换。
@@ -54,6 +55,7 @@
   - 紧接着创建一次git提交，提交信息简述此次状态更新，确保可回溯。
   - 编写/更新对应的单元测试、集成测试或验证脚本。
   - 即时记录新出现的技术债务、潜在风险与待确认事项。
+- 准备提交前必须执行`git add .`，确保所有未被`.gitignore`忽略的文件已纳入版本控制。
 - 遵循“先设计后实现”原则：如需要改动既有流程，先更新设计文档与流程图。
 - 遇到阻塞或返工，说明原因、所回退环节及调整方案。
 - 对每个子环节执行完成后，立刻检查git状态，准备原子化提交。
@@ -71,6 +73,7 @@
   - 设计文档、流程图、接口说明。
   - `README.md`、`CHANGELOG.md`、`docs/`与`discuss/`目录内相关文档。
   - 运行脚本、配置样例、环境准备说明。
+- 更新工作状态后，应先维护`CHANGELOG.md`，确认条目与影响描述完整，再运行`git add .`并创建提交。
 - 在项目根`AI-AGENT.md`或本文件记录新增约定、最佳实践、已知限制。
 - 若改动影响到专业化代理分工或职责，及时注明并建议后续协作方案。
 
@@ -79,7 +82,7 @@
 - 对照TodoWrite中的待办项，确认每项都关联到对应的git提交。
 - 维护语义化版本的`CHANGELOG.md`：将`[Unreleased]`内容移动到新版本号条目，并创建新的`[Unreleased]`区块。
 - 完成后在状态文档写入最终记录，包括交付成果、性能指标、已解决的问题及后续建议。
-- 恢复`now-task.md`为空模板，删除临时的`optimized-task.md`、`undetermined.md`等文件。
+- 恢复`now-task.md`为空模板，保留`ai-agent-output/`目录下的辅助文档，无需再删除`optimized-task.md`、`undetermined.md`或`mcp-log.md`。
 
 ## 版本控制与分支管理
 - **分支策略**：

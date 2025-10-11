@@ -43,7 +43,7 @@
 
 **重要说明**：任务内容优化阶段中分析得到的所有优化可能项，必须按以下流程处理然后经过用户处理确认再继续后续的环节：
 
-1. **记录待定项**：参考@undetermined-template.md格式，将待定项写入undetermined.md
+1. **记录待定项**：参考@undetermined-template.md格式，将待定项写入`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/undetermined.md`
 2. **统一确认**：完整分析后统一向用户确认所有待定项
 3. **结果整理**：用户确认后删除不采纳的待定项，多方案待定项仅保留采纳方案
 4. **方案唯一性**：确保每个保留待定项只有唯一实施方案
@@ -55,6 +55,7 @@
    - 包含优化后的完整任务描述
    - 明确的执行步骤和验证标准
    - 整合用户确认的待定项结果
+   - 文档应存放在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/optimized-task.md`，与同批次的`undetermined.md`、`AI-AGENT_working-status.csv`归档在一起
 
 2. **质量验证**
    - 确保优化后的任务描述清晰、准确、可执行

@@ -67,9 +67,9 @@
 
 > 假设当前工作目录在/path/to/workspace，有一个用于描述任务的文件是/path/to/workspace/tasks/task-1.md。
 >
-> 然后对其进行分析和优化，然后将优化后需要询问用户的待定项写入到/path/to/workspace/ai-agent-memory/undetermined.md。
+> 然后对其进行分析和优化，然后将优化后需要询问用户的待定项写入到/path/to/workspace/ai-agent-output/2025-01-01T12-00-00_UTC_任务简述/undetermined.md。
 
-`/path/to/workspace/ai-agent-memory/undetermined.md`的内容应该类似下面所示：
+`/path/to/workspace/ai-agent-output/2025-01-01T12-00-00_UTC_任务简述/undetermined.md`的内容应该类似下面所示：
 
 ```markdown
 ## 🔍 待定项U001 - 表述冗杂优化

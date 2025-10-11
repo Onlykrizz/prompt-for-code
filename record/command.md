@@ -17,6 +17,8 @@ cargo install --git https://github.com/astral-sh/uv uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 uv python install cpython-3.13.8+freethreaded-linux-x86_64-gnu
 uv venv --python cpython-3.13.8+freethreaded-linux-x86_64-gnu py313free-for-mcp
+uv python install cpython-3.13.8+freethreaded-windows-x86_64-none
+uv venv --python cpython-3.13.8+freethreaded-windows-x86_64-none py313free-for-mcp
 
 source py313free-for-mcp/bin/activate
 uv pip install mcp-server-time

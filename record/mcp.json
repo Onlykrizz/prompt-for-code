@@ -67,6 +67,14 @@
                 "C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\@wonderwhy-er\\desktop-commander\\dist\\index.js"
             ],
             "env": {}
+        },
+        "web-search": {
+            "type": "stdio",
+            "command": "C:\\Program Files\\nodejs\\node.exe",
+            "args": [
+                "C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\open-websearch\\build\\index.js"
+            ],
+            "env": {}
         }
     }
 }

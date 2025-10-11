@@ -18,6 +18,7 @@ uv venv --python cpython-3.13.8+freethreaded-linux-x86_64-gnu py313free-for-mcp
 
 source py313free-for-mcp/bin/activate
 uv pip install mcp-server-time
+uv pip install duckduckgo-mcp-server
 
 git clone https://github.com/oraios/serena
 cd serena/

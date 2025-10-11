@@ -32,3 +32,6 @@ command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/desktop-commander"
 [mcp_servers.serena]
 command = "/home/sayurinana/env-hub/serena/.venv/bin/serena"
 args = ["start-mcp-server"]
+
+# [mcp_servers.ddg-search]
+# command = "/home/sayurinana/env-hub/py313free-for-mcp/bin/duckduckgo-mcp-server"

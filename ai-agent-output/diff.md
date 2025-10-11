@@ -1,4 +1,4 @@
-- `specialization-agents` 目录下的文档主要用于定义 AI 代理的角色定位与协作规范，其结构以 YAML 头部开始，说明代理名称、描述、颜色等元信息，随后集中阐述交流语言、KISS/YAGNI/DRY/SOLID 等核心编程原则、核心职责、质量标准以及文档归档要求，并强调在识别代码坏味道时需先征询用户是否优化。例如：`specialization-agents/rust-cli-developer.md:1`、`specialization-agents/rust-cli-developer.md:10`、`specialization-agents/rust-cli-developer.md:100`、`specialization-agents/rust-cli-developer.md:109`。
+- `specialization-agents` 目录下的文档主要用于定义 AI 代理的角色定位与协作规范，其结构以 YAML 头部开始，说明代理名称、描述、颜色等元信息，随后集中阐述交流语言、KISS/YAGNI/DRY/SOLID 等核心编程原则、核心职责、质量标准以及文档归档要求，并强调在识别代码坏迹象时需先征询用户是否优化。例如：`specialization-agents/rust-cli-developer.md:1`、`specialization-agents/rust-cli-developer.md:10`、`specialization-agents/rust-cli-developer.md:100`、`specialization-agents/rust-cli-developer.md:109`。
 - `rust` 目录下的 “规范指导***.md” 文档定位为具体项目模板或实践手册，完全聚焦于给出可落地的技术规范：列出带版本号的依赖、项目结构树、代码片段、配置示例以及测试与发布清单，例如 `rust/规范指导_CLI应用模板.md:35`、`rust/规范指导_CLI应用模板.md:110`、`rust/规范指导_Web服务模板.md:111`、`rust/规范指导_Web服务模板.md:151`。
 - 二者整体关系是方法论与实施层的分工：`specialization-agents` 文档教会代理“如何思考与协作”，而 `rust/规范指导` 文档告诉开发者“具体怎么写和配置”。
 

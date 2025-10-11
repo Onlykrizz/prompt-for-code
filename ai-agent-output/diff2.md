@@ -3,7 +3,7 @@
 ## 总体差异
 - A独有：
   - **代理元信息注册**：通过 YAML 头描述代理身份、模型继承与配色，B 无对应元数据（specialization-agents/rust-cli-developer.md:1-6）。
-  - **行为准则/方法论约束**：反复强调沟通语言、KISS/YAGNI/DRY/SOLID 等原则及坏味道处理流程（specialization-agents/rust-cli-developer.md:10-24, specialization-agents/rust-cli-developer.md:90-101）。
+  - **行为准则/方法论约束**：反复强调沟通语言、KISS/YAGNI/DRY/SOLID 等原则及坏迹象处理流程（specialization-agents/rust-cli-developer.md:10-24, specialization-agents/rust-cli-developer.md:90-101）。
   - **文档归档流程**：要求将正式文档放入 `docs/`、讨论材料放入 `discuss/`（specialization-agents/rust-cli-developer.md:109-113）。
 - B独有：
   - **依赖清单与版本**：列出 `Cargo.toml` 片段明确版本号，A 仅给库名（rust/规范指导_CLI应用模板.md:35-58）。
@@ -13,7 +13,7 @@
 ## CLI 场景
 - A独有：
   - **用户体验与安全准则**：强调 CLI 需提供标准选项、确认机制、进度指示（specialization-agents/rust-cli-developer.md:32-87）。
-  - **质量门槛与坏味道警示**：要求发现坏味道先征询用户并给出建议（specialization-agents/rust-cli-developer.md:90-101）。
+  - **质量门槛与坏迹象警示**：要求发现坏迹象先征询用户并给出建议（specialization-agents/rust-cli-developer.md:90-101）。
 - B独有：
   - **命令行结构体模板**：给出 `Cli`、`Commands` 的 `clap` 派生示例（rust/规范指导_CLI应用模板.md:77-107）。
   - **入口函数骨架**：示范 `main` 中日志设置与子命令分发（rust/规范指导_CLI应用模板.md:110-126）。

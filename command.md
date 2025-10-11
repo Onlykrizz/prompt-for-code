@@ -24,6 +24,12 @@ git clone https://github.com/oraios/serena
 cd serena/
 uv run serena config edit
 uv run serena start-mcp-server
+
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts
+wget http://localhost:9999/PingFang_SC.ttc
+fc-cache .
+fc-list
 ```
 
 ```
@@ -33,4 +39,8 @@ export http_proxy=http://127.0.0.1:10809
 export https_proxy=http://127.0.0.1:10809
 export all_proxy=http://127.0.0.1:10809
 export no_proxy='127.0.0.1, localhost'
+```
+
+```
+skinparam defaultFontName "PingFang SC"
 ```

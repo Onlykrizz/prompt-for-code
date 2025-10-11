@@ -4,9 +4,9 @@
 
 1.对于mcp-log.md、AI-AGENT_working-status.csv、undetermined.md、optimized-task.md这些文档，重新设计存储文件路径
 
-在项目初始化时，创建`record/YYYY-MM-DDTHH-MM-SS_UTC_任务简述`目录，把这些文档都保存在这个目录下，例如`record/2025-10-11T19-01-14_UTC+8_新增MCP指引文档/optimized-task.md`，简述一般控制在8~20个字，
+在项目初始化时，创建`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述`目录，把这些文档都保存在这个目录下，例如`ai-agent-output/2025-10-11T19-01-14_UTC+8_新增MCP指引文档/optimized-task.md`，简述一般控制在8~20个字，
 
-后续本次任务中，项目本身的文档（比如代码文件，配置文件，他们都有确定的正确路径）之外的信息（比如即时从网络搜索到的额外信息，文档，拓展材料等），需要存储的话，就存在这个新建的目录，例如之前新增MCP指引文档时从网上搜到的信息就存到了`record/2025-10-11T19-01-14_UTC+8_新增MCP指引文档/mcp-research-notes.md`
+后续本次任务中，项目本身的文档（比如代码文件，配置文件，他们都有确定的正确路径）之外的信息（比如即时从网络搜索到的额外信息，文档，拓展材料等），需要存储的话，就存在这个新建的目录，例如之前新增MCP指引文档时从网上搜到的信息就存到了`ai-agent-output/2025-10-11T19-01-14_UTC+8_新增MCP指引文档/mcp-research-notes.md`
 
 清理阶段不需要再清理mcp-log.md、AI-AGENT_working-status.csv、undetermined.md、optimized-task.md，现在它们已经不影响目录整洁，
 

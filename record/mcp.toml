@@ -35,3 +35,7 @@ args = ["start-mcp-server"]
 
 # [mcp_servers.ddg-search]
 # command = "/home/sayurinana/env-hub/py313free-for-mcp/bin/duckduckgo-mcp-server"
+
+[mcp_servers.web-search]
+command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/open-websearch"
+env = { MODE = "stdio", DEFAULT_SEARCH_ENGINE = "duckduckgo", ENABLE_CORS = "true", CORS_ORIGIN = "*", USE_PROXY = "true", PROXY_URL = "http://s15.huse-lab.s.net:10809" }

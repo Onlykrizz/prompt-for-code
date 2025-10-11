@@ -10,8 +10,9 @@
 ## 全程通用
 - [ ] 已重读项目根目录`AI-AGENT.md`与`ai-agent-memory`中的全部指南。
 - [ ] `AI-AGENT_working-status.csv`存在且最新记录与当前环节一致。
+- [ ] 每次更新`AI-AGENT_working-status.csv`后已立即创建git提交。
 - [ ] TodoWrite（或等效工具）中已登记所有主要步骤及对应提交计划。
-- [ ] 若任务涉及时间记录，须调用`mcp-server-time`获取实时时间。
+- [ ] 若任务涉及时间记录，已调用`mcp-server-time`获取实时时间。
 - [ ] 所有沟通、文档、提交信息均使用简体中文。
 
 ## 任务前置准备

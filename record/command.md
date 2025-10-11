@@ -10,6 +10,7 @@ npm install -g mcp-shrimp-task-manager
 npm install -g mcp-deepwiki@latest
 npm install -g @wonderwhy-er/desktop-commander
 npm install -g @modelcontextprotocol/server-filesystem
+npm install -g open-websearch@latest
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install --git https://github.com/astral-sh/uv uv

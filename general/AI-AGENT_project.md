@@ -7,7 +7,7 @@
 - `ai-agent-memory/AI-AGENT_programming.md`：编程/开发任务的额外要求、测试与提交规范。
 - `ai-agent-memory/AI-AGENT_check.md`：六大环节的核对清单，确保每一步可追溯、可验证。
 - `ai-agent-memory/now-task.md`：待用户填写的任务描述模板，执行前必须完成“任务内容预处理”。
-- `general/AI-AGENT_mcp-rules.md`：本项目常用MCP服务的调用规范、安全边界与日志要求。
+- `ai-agent-memory/AI-AGENT_mcp-rules.md`：本项目常用MCP服务的调用规范、安全边界与日志要求。
 
 ## 工作要求摘要
 1. **工作状态同步**：首次进入“任务前置准备”环节时创建`AI-AGENT_working-status.csv`，按环节维护记录，并在每次更新该文件后立即创建git提交以保留状态变更轨迹。

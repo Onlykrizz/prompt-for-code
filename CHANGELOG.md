@@ -5,9 +5,12 @@
 本项目遵循[语义化版本](https://semver.mdn.cn/)规范。
 
 ## [Unreleased]
+
+## [0.8.0] - 2025-10-11
 ### 变更 (Changed)
 - 更新 general 目录指引，统一要求将`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.md`等辅助文档存放于`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录，并同步调整MCP日志路径。
 - 在通用流程与检查清单中补充提交顺序规范：提交前执行`git add .`，并在更新工作状态后优先维护`CHANGELOG.md`。
+- 在指令体系中新增强制要求：每次任务的“文档更新”环节必须维护`CHANGELOG.md`并更新版本号（创建新版本段落、写入日期并重建空的`[Unreleased]`区块）。
 
 ## [0.7.0] - 2025-09-02
 

@@ -50,7 +50,7 @@
 
 ## 文档更新
 - [ ] 项目内受影响的文档（如`README.md`、`CHANGELOG.md`、设计文档）均已更新。
-- [ ] 更新工作状态后已优先维护`CHANGELOG.md`，再执行`git add .`并创建提交。
+- [ ] 更新工作状态后已优先维护`CHANGELOG.md`，并完成本轮版本号更新（创建新版本段落、写入日期、重建空的`[Unreleased]`区块），再执行`git add .`并创建提交。
 - [ ] `AI-AGENT_project.md`或其他规范文档已记录新的约定、流程或决策。
 - [ ] 若生成/修改流程图，PNG输出与源文件同步。
 - [ ] 所有临时笔记、脚本说明等已整理至合适位置或明确存档意图。
@@ -59,6 +59,6 @@
 ## 收尾
 - [ ] 仓库处于整洁状态，临时文件、冗余日志等已清理。
 - [ ] `now-task.md`已恢复为仅保留标题的初始模板。
-- [ ] `ai-agent-output/`下的辅助文档目录结构完整，无需删除`optimized-task.md`、`undetermined.md`或`mcp-log.md`。
+- [ ] `ai-agent-output/`下的辅助文档目录结构完整，无需删除`optimized-task.md`、`undetermined.md`或`mcp-log.md`，且确认`CHANGELOG.md`中的最新版本号已记录本轮成果。
 - [ ] Git提交与TodoWrite状态一致，提交信息准确反映变更内容。
 - [ ] 已在状态文档新增最终记录，概述交付成果、遗留问题与后续建议。

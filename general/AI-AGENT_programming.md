@@ -73,7 +73,7 @@
   - 设计文档、流程图、接口说明。
   - `README.md`、`CHANGELOG.md`、`docs/`与`discuss/`目录内相关文档。
   - 运行脚本、配置样例、环境准备说明。
-- 更新工作状态后，应先维护`CHANGELOG.md`，确认条目与影响描述完整，再运行`git add .`并创建提交。
+- 更新工作状态后，应先维护`CHANGELOG.md`，确认条目与影响描述完整；随后必须根据当次变更创建新的版本号段落（写入日期并重建空的`[Unreleased]`区块），再运行`git add .`并创建提交。
 - 在项目根`AI-AGENT.md`或本文件记录新增约定、最佳实践、已知限制。
 - 若改动影响到专业化代理分工或职责，及时注明并建议后续协作方案。
 
@@ -82,7 +82,7 @@
 - 对照TodoWrite中的待办项，确认每项都关联到对应的git提交。
 - 维护语义化版本的`CHANGELOG.md`：将`[Unreleased]`内容移动到新版本号条目，并创建新的`[Unreleased]`区块。
 - 完成后在状态文档写入最终记录，包括交付成果、性能指标、已解决的问题及后续建议。
-- 恢复`now-task.md`为空模板，保留`ai-agent-output/`目录下的辅助文档，无需再删除`optimized-task.md`、`undetermined.md`或`mcp-log.md`。
+- 恢复`now-task.md`为空模板，保留`ai-agent-output/`目录下的辅助文档，无需再删除`optimized-task.md`、`undetermined.md`或`mcp-log.md`，并确认`CHANGELOG.md`已完成版本号更新。
 
 ## 版本控制与分支管理
 - **分支策略**：

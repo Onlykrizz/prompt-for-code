@@ -31,7 +31,6 @@
 | Serena | 内置 `serena` | 代码语义检索与符号级编辑 | 高，需要谨慎写操作 |
 | Filesystem | 内置 `filesystem` | 受控文件读写、目录管理 | 高，需要限定根目录 |
 | Playwright | 内置 `playwright` | 浏览器自动化、可访问性操作 | 中，涉及网页交互 |
-| Shrimp Task Manager | 内置 `shrimp-task-manager` | 任务规划、执行与记忆持久化 | 中，写入数据目录 |
 | DeepWiki | 内置 `deepwiki` | 仓库文档检索与问答 | 低，仅网络访问 |
 | Desktop Commander | 内置 `desktop-commander` | 本地终端+文件系统增强 | 高，支持命令执行 |
 
@@ -104,18 +103,7 @@
   - 动态页面建议先使用 `browser_wait_for` 等等待工具确保状态稳定。
 - **输出要求**：保存关键截图或 PDF 结果，并在 `ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/mcp-log.md` 标注 URL、步骤与耗时。
 
-### 7. Shrimp Task Manager（智能任务管理）
-- **适用场景**：需要让代理自主规划开发任务、跟踪执行状态、保持跨会话记忆。
-- **部署提示**：`node dist/index.js` 或通过包管理器启动，务必设置 `DATA_DIR`（持久化目录），可选 `ENABLE_GUI`/`WEB_PORT`。
-- **操作流程**：
-  1. 新项目执行 `init_project_rules`，写入规范与约束。
-  2. 通过 `plan_task`、`analyze_task` 生成任务树，必要时使用 `split_tasks` 自动拆解。
-  3. `execute_task`/`continuous mode` 驱动执行，结束后调用 `verify_task`、`reflect_task` 复盘。
-  4. 使用 `list_tasks`、`query_task` 检查进度，`get_task_detail` 查看历史。
-- **数据安全**：`DATA_DIR` 可能包含中间产物，请纳入 `.gitignore`；删除任务前使用 `clear_all_tasks` 自动备份。
-- **记录要求**：在 `ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/mcp-log.md` 记下创建/完成的任务标识、推理摘要与剩余问题，便于接班。
-
-### 8. DeepWiki（仓库知识检索）
+### 7. DeepWiki（仓库知识检索）
 - **适用场景**：快速了解公共或授权仓库的结构、文档与实现要点，辅助代码审阅或调研。
 - **配置方式**：
   - 公共仓库使用 `"url": "https://mcp.deepwiki.com/sse"`；
@@ -130,7 +118,7 @@
   - 问答结果用于参考，不可直接视为事实；必要时再结合源码验证。
 - **记录要求**：在日志中注明仓库地址、工具、关键结论与未解决问题。
 
-### 9. Desktop Commander（终端与文件系统增强）
+### 8. Desktop Commander（终端与文件系统增强）
 - **适用场景**：需要在本机执行终端命令、长任务或复杂文件操作，并获取实时输出。
 - **安装建议**：`npx @wonderwhy-er/desktop-commander@latest setup`（支持自动更新）；可通过 `--debug` 开启调试模式，`remove` 命令卸载。
 - **能力范围**：

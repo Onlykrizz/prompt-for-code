@@ -19,9 +19,9 @@ command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/context7-mcp"
 [mcp_servers.playwright]
 command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-server-playwright"
 
-[mcp_servers.shrimp-task-manager]
-command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-shrimp-task-manager"
-env = { DATA_DIR = "/mnt/d/appdata/mcp-shrimp-task-manager/data", TEMPLATES_USE = "zh", ENABLE_GUI = "false" }
+# [mcp_servers.shrimp-task-manager]
+# command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-shrimp-task-manager"
+# env = { DATA_DIR = "/mnt/d/appdata/mcp-shrimp-task-manager/data", TEMPLATES_USE = "zh", ENABLE_GUI = "false" }
 
 [mcp_servers.deepwiki]
 command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-instruct"

@@ -1,4 +1,5 @@
 时间戳,短述,当前环节,项目状态概况
+2025-10-11 21:04:00 (Asia/Shanghai),完成核对,验证结果,已对照optimized-task与AI-AGENT_check确认全部文档新增路径、git add及CHANGELOG顺序要求生效，准备进入文档更新环节。
 2025-10-11 20:59:14 (Asia/Shanghai),转入,验证结果,准备对照optimized-task与检查清单复核文档更新效果。
 2025-10-11 20:58:09 (Asia/Shanghai),推进,任务主体流程循环-文档修改,已更新general目录核心指引（general、programming、project、check、step-before、mcp-rules、README、undetermined-template）写入新目录规范与提交顺序要求。
 2025-10-11 20:53:00 (Asia/Shanghai),转入,任务主体流程循环-文档修改,依据设计开始逐项更新general目录文档，优先处理存储路径规范。

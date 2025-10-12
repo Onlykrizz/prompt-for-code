@@ -6,6 +6,13 @@
 
 ## [Unreleased]
 
+## [0.12.0] - 2025-10-12
+### 新增 (Added)
+- 创建 `general/criterion-flutter-rust/` 与 `general/criterion-react-rust/`，提供 Flutter/React 与 Rust 协同的多方案守则与项目创建维护指导。
+
+### 变更 (Changed)
+- 在 `general/README.md` 增补 Flutter+Rust、React+Rust 目录索引。
+
 ## [0.11.0] - 2025-10-12
 ### 新增 (Added)
 - 新增 `general/criterion-flutter/` 目录，覆盖移动与平板、桌面与Web、插件与平台通道、企业与可观测性、高性能与图形动画五类Flutter守则。

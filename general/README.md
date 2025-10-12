@@ -25,5 +25,7 @@
    - `criterion-java/`：覆盖Java CLI、Web与微服务、企业平台、数据工程、高性能/分布式五类守则，并罗列权威资料链接。
    - `criterion-flutter/`：覆盖Flutter移动、桌面/Web、插件、企业可观测性、高性能动画等方向的守则。
    - `criterion-react/`：覆盖React(TypeScript) SPA、SSR/边缘渲染、设计系统、状态管理、性能质量等方向的守则。
+   - `criterion-flutter-rust/`：针对Flutter与Rust协同的多方案守则与项目指导。
+   - `criterion-react-rust/`：针对React(TypeScript)与Rust协同的多方案守则与项目指导。
 
 > 提示：若需要额外的运行脚本或配置片段，请在目标项目中自行维护，避免污染模板目录。

@@ -25,14 +25,14 @@
 ## 服务指引概览
 | 服务 | 包名/入口 | 主要用途 | 写操作风险 |
 | --- | --- | --- | --- |
-| Sequential Thinking | 内置 `sequential-thinking` | 复杂任务规划、步骤生成 | 无 |
-| web-search | 内置 `web-search` | 最新网页/资讯检索 | 无 |
-| Context7 | 内置 `context7` | 官方文档/SDK 检索 | 无 |
-| Serena | 内置 `serena` | 代码语义检索与符号级编辑 | 高，需要谨慎写操作 |
-| Filesystem | 内置 `filesystem` | 受控文件读写、目录管理 | 高，需要限定根目录 |
-| Playwright | 内置 `playwright` | 浏览器自动化、可访问性操作 | 中，涉及网页交互 |
-| DeepWiki | 内置 `deepwiki` | 仓库文档检索与问答 | 低，仅网络访问 |
-| Desktop Commander | 内置 `desktop-commander` | 本地终端+文件系统增强 | 高，支持命令执行 |
+| Sequential Thinking | 内置 `mcp-sequential-thinking` | 复杂任务规划、步骤生成 | 无 |
+| web-search | 内置 `mcp-web-search` | 最新网页/资讯检索 | 无 |
+| Context7 | 内置 `mcp-context7` | 官方文档/SDK 检索 | 无 |
+| Serena | 内置 `mcp-serena` | 代码语义检索与符号级编辑 | 高，需要谨慎写操作 |
+| Filesystem | 内置 `mcp-filesystem` | 受控文件读写、目录管理 | 高，需要限定根目录 |
+| Playwright | 内置 `mcp-playwright` | 浏览器自动化、可访问性操作 | 中，涉及网页交互 |
+| DeepWiki | 内置 `mcp-deepwiki` | 仓库文档检索与问答 | 低，仅网络访问 |
+| Desktop Commander | 内置 `mcp-desktop-commander` | 本地终端+文件系统增强 | 高，支持命令执行 |
 
 ## 服务详情
 

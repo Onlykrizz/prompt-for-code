@@ -28,7 +28,7 @@
 - 存储位置：在项目初始化时于`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录下集中存放`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`与`mcp-log.md`等辅助文档，任务简述建议控制在8-20字，例如`ai-agent-output/2025-10-11T20-37-40_UTC+8_更新指令存储规范/optimized-task.md`。
 - 添加记录时总是**插入在表头后第一行，即文档第二行**，确保最新状态在最上方。
 - 每条记录必须包含以下信息：
-  - **时间戳**：使用`mcp-server-time`获取的实时时间，推荐格式：`YYYY-MM-DD HH:MM:SS (时区)`。
+  - **时间戳**：使用`mcp-time`获取的实时时间，推荐格式：`YYYY-MM-DD HH:MM:SS (时区)`。
   - **短述**：2-10个字，概括状态变化，如“初始状态”“推进”“返工”“暂停”等。
   - **当前环节**：与上文六个环节之一保持一致，若处于任务主体中的子步骤，须补充子步骤名称。
   - **项目状态概况**：10-200字，描述当前成果、待办事项、阻塞点或重要决策。

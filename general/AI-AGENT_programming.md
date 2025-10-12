@@ -9,7 +9,7 @@
   - Run & Debug必须通过`scripts/`目录下的`.py`脚本统一启动/停止，不直接调用npm、uv等命令。
   - 运行前配置带文件输出的Logger至`logs/`目录。
   - 若脚本或依赖异常，优先修复脚本再继续任务。
-- **时间引用**：需记录时间时调用`mcp-server-time`获取实时值。
+- **时间引用**：需记录时间时调用`mcp-time`获取实时值。
 - **Sequential-Thinking**：当需求涉及多模块、多方案或复杂业务逻辑时，必须调用Sequential-Thinking服务完成结构化分析。
 - **文档归档**：`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.md`等辅助文档统一存放于`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录，任务简述需控制在8-20字。
 

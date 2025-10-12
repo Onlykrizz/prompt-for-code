@@ -3,39 +3,39 @@ command = "npx"
 args = ["-y", "@mcp_router/cli@latest", "connect"]
 env = { MCPR_TOKEN = "mcpr_pDUNmDWPJ9rYmWcQ0DT0gRmmpEJMc0Kt" }
 
-[mcp_servers.mcp-server-time]
+[mcp_servers.mcp-time]
 command = "/home/sayurinana/env-hub/py313free-for-mcp/bin/mcp-server-time"
 args = ["--local-timezone=Asia/Shanghai"]
 
-[mcp_servers.sequential-thinking]
+[mcp_servers.mcp-sequential-thinking]
 command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-server-sequential-thinking"
 
-[mcp_servers.filesystem]
+[mcp_servers.mcp-filesystem]
 command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-server-filesystem"
 
-[mcp_servers.context7]
+[mcp_servers.mcp-context7]
 command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/context7-mcp"
 
-[mcp_servers.playwright]
+[mcp_servers.mcp-playwright]
 command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-server-playwright"
 
-# [mcp_servers.shrimp-task-manager]
+# [mcp_servers.mcp-shrimp-task-manager]
 # command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-shrimp-task-manager"
 # env = { DATA_DIR = "/mnt/d/appdata/mcp-shrimp-task-manager/data", TEMPLATES_USE = "zh", ENABLE_GUI = "false" }
 
-[mcp_servers.deepwiki]
+[mcp_servers.mcp-deepwiki]
 command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-instruct"
 
-[mcp_servers.desktop-commander]
+[mcp_servers.mcp-desktop-commander]
 command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/desktop-commander"
 
-[mcp_servers.serena]
+[mcp_servers.mcp-serena]
 command = "/home/sayurinana/env-hub/serena/.venv/bin/serena"
 args = ["start-mcp-server", "--context", "codex"]
 
-# [mcp_servers.ddg-search]
+# [mcp_servers.mcp-ddg-search]
 # command = "/home/sayurinana/env-hub/py313free-for-mcp/bin/duckduckgo-mcp-server"
 
-[mcp_servers.web-search]
+[mcp_servers.mcp-web-search]
 command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/open-websearch"
 env = { MODE = "stdio", DEFAULT_SEARCH_ENGINE = "duckduckgo", ENABLE_CORS = "true", CORS_ORIGIN = "*", USE_PROXY = "true", PROXY_URL = "http://s15.huse-lab.s.net:10809" }

@@ -14,7 +14,7 @@
 - [ ] 在每次提交前已执行`git add .`，确认所有未被`.gitignore`忽略的文件均被追踪。
 - [ ] 每次更新`AI-AGENT_working-status.csv`后已立即创建git提交。
 - [ ] TodoWrite（或等效工具）中已登记所有主要步骤及对应提交计划。
-- [ ] 若任务涉及时间记录，已调用`mcp-server-time`获取实时时间。
+- [ ] 若任务涉及时间记录，已调用`mcp-time`获取实时时间。
 - [ ] 所有沟通、文档、提交信息均使用简体中文。
 - [ ] 调用任何MCP服务前已对照`AI-AGENT_mcp-rules.md`确认权限范围，并在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/mcp-log.md`记录调用摘要。
 

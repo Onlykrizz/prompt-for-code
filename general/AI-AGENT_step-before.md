@@ -38,6 +38,9 @@
    - 将抽象要求转化为具体可执行的步骤
    - 确保每个步骤都有明确的输入、输出和验证标准
    - 考虑执行顺序和依赖关系
+    - 按`undetermined-template.md`列出所有优化或替代方案，写入`undetermined.md`并标注优势/风险。
+    - 同步查阅`general/user-temp-opinion.md`，记录本次任务的临时意见或待确认项。
+    - 在未获得用户统一确认前，禁止进入下一环节或修改`optimized-task.md`。
 
 #### 3. 待定项处理机制
 
@@ -47,7 +50,7 @@
 2. **统一确认**：完整分析后统一向用户确认所有待定项
 3. **结果整理**：用户确认后删除不采纳的待定项，多方案待定项仅保留采纳方案
 4. **方案唯一性**：确保每个保留待定项只有唯一实施方案
-5. **结果整合**：将确认结果整合到optimized-task.md
+5. **结果整合**：将确认结果整合到`optimized-task.md`，并在`general/user-temp-opinion.md`中补充最终意见或引用确认语句
 
 #### 4. 优化结果生成
 
@@ -56,6 +59,7 @@
    - 明确的执行步骤和验证标准
    - 整合用户确认的待定项结果
    - 文档应存放在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/optimized-task.md`，与同批次的`undetermined.md`、`AI-AGENT_working-status.csv`归档在一起
+    - 写入前再次比对`general/user-temp-opinion.md`，确保临时意见已被吸收或在文档中明确备注
 
 2. **质量验证**
    - 确保优化后的任务描述清晰、准确、可执行

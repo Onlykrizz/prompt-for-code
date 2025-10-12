@@ -8,7 +8,7 @@
 - 若任务需要返工，请重新回到相应环节的清单进行核对。
 
 ## 全程通用
-- [ ] 已重读项目根目录`AI-AGENT.md`与`ai-agent-memory`中的全部指南。
+- [ ] 已重读项目根目录`AGENTS.md`与`ai-agent-memory`中的全部指南。
 - [ ] `AI-AGENT_working-status.csv`存在且最新记录与当前环节一致。
 - [ ] 已在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录集中存放本轮任务的`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.md`等辅助文档，并符合命名规范。
 - [ ] 在每次提交前已执行`git add .`，确认所有未被`.gitignore`忽略的文件均被追踪。

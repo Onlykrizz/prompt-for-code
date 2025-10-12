@@ -1,4 +1,4 @@
-# AI-AGENT.md（项目级模板）
+# AGENTS.md
 
 !!! 在开始任何工作前，必须先阅读本文件，并逐一查阅`ai-agent-memory/`目录中的所有指引。
 

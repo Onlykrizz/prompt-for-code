@@ -3,11 +3,11 @@
 本目录用于集中维护AI代理执行任务所需的基础文档和模板。复用方式如下：
 
 1. **初始化项目规范**
-   - 将`AI-AGENT_project.md`复制到目标项目根目录，并重命名为`AI-AGENT.md`。
+   - 将`AI-AGENT_project.md`复制到目标项目根目录，并重命名为`AGENTS.md`。
    - 将除`AI-AGENT_project.md`以外的所有文件复制到目标项目的`ai-agent-memory/`目录下。
 
 2. **任务执行前准备**
-   - 在复制完成后，项目中的`AI-AGENT.md`会提醒代理优先阅读`ai-agent-memory/`内的指引。
+   - 在复制完成后，项目中的`AGENTS.md`会提醒代理优先阅读`ai-agent-memory/`内的指引。
    - `AI-AGENT_general.md`涵盖所有通用任务流程；如执行编程任务，再结合`AI-AGENT_programming.md`。
    - `AI-AGENT_check.md`提供阶段性检查清单，确保每个环节的工作质量。
    - `AI-AGENT_mcp-rules.md`汇总常用MCP服务的调用规范、安全边界与记录要求。

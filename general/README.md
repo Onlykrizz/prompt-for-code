@@ -21,6 +21,7 @@
 
 4. **规范守则目录**
    - `criterion-rust/`：覆盖Rust CLI、Web、库、跨平台、高性能五类项目的规范守则。
-   - `criterion-python/`：覆盖Python CLI、Web、数据科学、企业平台、高性能/分布式方向的规范守则，附参考资料与模板结构。
+   - `criterion-python/`：覆盖Python CLI、Web、数据科学、企业平台、高性能/分布式方向的规范守则。
+   - `criterion-java/`：覆盖Java CLI、Web与微服务、企业平台、数据工程、高性能/分布式五类守则，并罗列权威资料链接。
 
 > 提示：若需要额外的运行脚本或配置片段，请在目标项目中自行维护，避免污染模板目录。

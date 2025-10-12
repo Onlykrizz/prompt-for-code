@@ -25,7 +25,7 @@
 
 ## 工作状态记录规范
 - 文件：`AI-AGENT_working-status.csv`，首次进入“任务前置准备”前创建。
-- 存储位置：在项目初始化时于`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录下集中存放`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`与`mcp-log.md`等辅助文档，任务简述建议控制在8-20字，例如`ai-agent-output/2025-10-11T20-37-40_UTC+8_更新指令存储规范/optimized-task.md`。
+- 存储位置：在项目初始化时于`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录下集中存放`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.csv`与`mcp-log.md`等辅助文档，任务简述建议控制在8-20字，例如`ai-agent-output/2025-10-11T20-37-40_UTC+8_更新指令存储规范/optimized-task.md`。
 - 添加记录时总是**插入在表头后第一行，即文档第二行**，确保最新状态在最上方。
 - 每条记录必须包含以下信息：
   - **时间戳**：使用`mcp-time`获取的实时时间，推荐格式：`YYYY-MM-DD HH:MM:SS (时区)`。
@@ -86,7 +86,7 @@
 
 ## 6. 收尾
 - 清理临时文件、辅助脚本和不再使用的草稿，确保仓库保持整洁。
-- 恢复`now-task.md`为等待用户输入的初始状态（仅保留标题），保留`ai-agent-output/`下的辅助文档目录，无需再删除`optimized-task.md`、`undetermined.md`或`mcp-log.md`，并确认本轮版本号已更新记录在`CHANGELOG.md`中。
+- 恢复`now-task.md`为等待用户输入的初始状态（仅保留标题），保留`ai-agent-output/`下的辅助文档目录，无需再删除`optimized-task.md`、`undetermined.md`、`mcp-log.csv`或`mcp-log.md`，并确认本轮版本号已更新记录在`CHANGELOG.md`中。
 - 核对提交计划与实际提交是否一致，必要时补充说明或提交。
 - 添加最终状态记录，简述交付成果、遗留风险与后续建议。
 - 若需要继续后续任务，提醒用户更新`now-task.md`并重新启动流程。

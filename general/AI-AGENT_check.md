@@ -10,13 +10,13 @@
 ## 全程通用
 - [ ] 已重读项目根目录`AI-AGENT.md`与`ai-agent-memory`中的全部指南。
 - [ ] `AI-AGENT_working-status.csv`存在且最新记录与当前环节一致。
-- [ ] 已在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录集中存放本轮任务的`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.md`等辅助文档，并符合命名规范。
+- [ ] 已在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录集中存放本轮任务的`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.csv`与`mcp-log.md`等辅助文档，并符合命名规范。
 - [ ] 在每次提交前已执行`git add .`，确认所有未被`.gitignore`忽略的文件均被追踪。
 - [ ] 每次更新`AI-AGENT_working-status.csv`后已立即创建git提交。
 - [ ] TodoWrite（或等效工具）中已登记所有主要步骤及对应提交计划。
 - [ ] 若任务涉及时间记录，已调用`mcp-time`获取实时时间。
 - [ ] 所有沟通、文档、提交信息均使用简体中文。
-- [ ] 调用任何MCP服务前已对照`AI-AGENT_mcp-rules.md`确认权限范围，并在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/mcp-log.md`记录调用摘要。
+- [ ] 调用任何MCP服务前已对照`AI-AGENT_mcp-rules.md`确认权限范围，并在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/mcp-log.csv`记录调用摘要（必要时可在`mcp-log.md`补充说明）。
 
 ## 任务前置准备
 - [ ] 已完整阅读`now-task.md`并梳理目标、边界、成功标准。
@@ -61,6 +61,6 @@
 ## 收尾
 - [ ] 仓库处于整洁状态，临时文件、冗余日志等已清理。
 - [ ] `now-task.md`已恢复为仅保留标题的初始模板。
-- [ ] `ai-agent-output/`下的辅助文档目录结构完整，无需删除`optimized-task.md`、`undetermined.md`或`mcp-log.md`，且确认`CHANGELOG.md`中的最新版本号已记录本轮成果。
+- [ ] `ai-agent-output/`下的辅助文档目录结构完整，无需删除`optimized-task.md`、`undetermined.md`、`mcp-log.csv`或`mcp-log.md`，且确认`CHANGELOG.md`中的最新版本号已记录本轮成果。
 - [ ] Git提交与TodoWrite状态一致，提交信息准确反映变更内容。
 - [ ] 已在状态文档新增最终记录，概述交付成果、遗留问题与后续建议。

@@ -103,7 +103,7 @@
   - 发送指令前描述目标元素（`element` 字段）与预期行为，确保权限请求准确。
   - 对外部网站遵守 robots 与速率限制，避免自动化滥用；必要时交替人工确认。
   - 动态页面建议先使用 `browser_wait_for` 等等待工具确保状态稳定。
-- **输出要求**：保存关键截图或 PDF 结果，并在 `ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/mcp-log.md` 标注 URL、步骤与耗时。
+- **输出要求**：保存关键截图或 PDF 结果，并在 `ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/mcp-log.csv` 标注 URL、步骤与耗时（必要时可在`mcp-log.md`补充说明）。
 
 ### 7. DeepWiki（仓库知识检索）
 - **适用场景**：快速了解公共或授权仓库的结构、文档与实现要点，辅助代码审阅或调研。

@@ -5,12 +5,16 @@
 本项目遵循[语义化版本](https://semver.mdn.cn/)规范。
 
 ## [Unreleased]
+
+## [0.9.0] - 2025-10-12
 ### 新增 (Added)
 - 创建 `general/user-temp-opinion.md` 模板，提供“无需记录”和“记录但忽略部分MCP”两种默认选项，并引导用户填写临时意见。
+- 新增 `general/criterion-python/` 目录，覆盖 CLI、Web、数据科学、企业平台、高性能计算五大方向的Python规范守则，并附参考资料与项目骨架。
 
 ### 变更 (Changed)
 - 强化 general 目录的任务前置准备与流程设计要求，执行前必须列出待定项、整合临时意见并获用户确认。
 - 统一 general 下各指引（含 `AI-AGENT_mcp-rules.md`、`AI-AGENT_general.md`、`AI-AGENT_step-before.md`、`AI-AGENT_check.md`、`AI-AGENT_programming.md`、`AI-AGENT_project.md`、`README.md`）的日志规范，明确以 `mcp-log.csv` 为主记录、`mcp-log.md` 为说明文档。
+- 将 `general/criterion-rust/` 下 `规范指导_*` 文件统一重命名为 `规范守则_*`，并同步更新文内标题与术语保持一致。
 
 ## [0.8.0] - 2025-10-11
 ### 变更 (Changed)

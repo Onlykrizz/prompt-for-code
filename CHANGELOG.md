@@ -6,6 +6,14 @@
 
 ## [Unreleased]
 
+## [0.11.0] - 2025-10-12
+### 新增 (Added)
+- 新增 `general/criterion-flutter/` 目录，覆盖移动与平板、桌面与Web、插件与平台通道、企业与可观测性、高性能与图形动画五类Flutter守则。
+- 新增 `general/criterion-react/` 目录，面向TypeScript生态的React守则，涵盖SPA、SSR与边缘渲染、设计系统、状态管理、性能优化等方向。
+
+### 变更 (Changed)
+- 在 `general/README.md` 补充 Flutter 与 React(TypeScript) 守则目录说明，保持索引完整。
+
 ## [0.10.0] - 2025-10-12
 ### 新增 (Added)
 - 新增 `general/criterion-java/` 目录，覆盖 CLI与自动化脚本、Web与微服务、企业级平台与服务、数据工程与大数据、高性能与分布式计算五大方向的Java守则，整理核心原则、结构建议与权威参考链接。

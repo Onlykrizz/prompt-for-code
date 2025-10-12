@@ -11,7 +11,7 @@
   - 若脚本或依赖异常，优先修复脚本再继续任务。
 - **时间引用**：需记录时间时调用`mcp-time`获取实时值。
 - **Sequential-Thinking**：当需求涉及多模块、多方案或复杂业务逻辑时，必须调用Sequential-Thinking服务完成结构化分析。
-- **文档归档**：`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.md`等辅助文档统一存放于`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录，任务简述需控制在8-20字。
+- **文档归档**：`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.csv`与`mcp-log.md`等辅助文档统一存放于`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录，任务简述需控制在8-20字。
 
 ## 专业化代理与分工
 - 根据任务类型选择合适的专业化代理（如`rust-web-developer`、`rust-library-developer`等），必要时在不同阶段切换。
@@ -73,8 +73,8 @@
   - 设计文档、流程图、接口说明。
   - `README.md`、`CHANGELOG.md`、`docs/`与`discuss/`目录内相关文档。
   - 运行脚本、配置样例、环境准备说明。
-- 更新工作状态后，应先维护`CHANGELOG.md`，确认条目与影响描述完整，再运行`git add .`并创建提交。
-- 在项目根`AGENTS.md`或本文件记录新增约定、最佳实践、已知限制。
+- 更新工作状态后，应先维护`CHANGELOG.md`，确认条目与影响描述完整；随后必须根据当次变更创建新的版本号段落（写入日期并重建空的`[Unreleased]`区块），再运行`git add .`并创建提交。
+- 在项目根`AI-AGENT.md`或本文件记录新增约定、最佳实践、已知限制。
 - 若改动影响到专业化代理分工或职责，及时注明并建议后续协作方案。
 
 ### 6. 收尾
@@ -82,7 +82,7 @@
 - 对照TodoWrite中的待办项，确认每项都关联到对应的git提交。
 - 维护语义化版本的`CHANGELOG.md`：将`[Unreleased]`内容移动到新版本号条目，并创建新的`[Unreleased]`区块。
 - 完成后在状态文档写入最终记录，包括交付成果、性能指标、已解决的问题及后续建议。
-- 恢复`now-task.md`为空模板，保留`ai-agent-output/`目录下的辅助文档，无需再删除`optimized-task.md`、`undetermined.md`或`mcp-log.md`。
+- 恢复`now-task.md`为空模板，保留`ai-agent-output/`目录下的辅助文档，无需再删除`optimized-task.md`、`undetermined.md`、`mcp-log.csv`或`mcp-log.md`，并确认`CHANGELOG.md`已完成版本号更新。
 
 ## 版本控制与分支管理
 - **分支策略**：
@@ -102,7 +102,7 @@
 - 遵循语义化版本，维持`CHANGELOG.md`的`[Unreleased]`区域。
 - 每次功能/修复完成后，立即将变更条目写入对应分类（Added/Changed/Fixed/Removed）。
 - 发布版本时，将`[Unreleased]`迁移为实际版本号并写入日期，同时创建新的`[Unreleased]`段落。
-- 若任务涉及重要决策、约束或反复出现的风险，需在`AGENTS.md`或相关设计文档中记录原因与影响。
+- 若任务涉及重要决策、约束或反复出现的风险，需在`AI-AGENT.md`或相关设计文档中记录原因与影响。
 
 ## 坏迹象识别与沟通
 - 发现僵化、冗余、循环依赖等坏迹象时：

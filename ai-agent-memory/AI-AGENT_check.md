@@ -8,29 +8,30 @@
 - 若任务需要返工，请重新回到相应环节的清单进行核对。
 
 ## 全程通用
-- [ ] 已重读项目根目录`AGENTS.md`与`ai-agent-memory`中的全部指南。
+- [ ] 已重读项目根目录`AI-AGENT.md`与`ai-agent-memory`中的全部指南。
 - [ ] `AI-AGENT_working-status.csv`存在且最新记录与当前环节一致。
-- [ ] 已在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录集中存放本轮任务的`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.md`等辅助文档，并符合命名规范。
+- [ ] 已在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录集中存放本轮任务的`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.csv`与`mcp-log.md`等辅助文档，并符合命名规范。
 - [ ] 在每次提交前已执行`git add .`，确认所有未被`.gitignore`忽略的文件均被追踪。
 - [ ] 每次更新`AI-AGENT_working-status.csv`后已立即创建git提交。
 - [ ] TodoWrite（或等效工具）中已登记所有主要步骤及对应提交计划。
 - [ ] 若任务涉及时间记录，已调用`mcp-time`获取实时时间。
 - [ ] 所有沟通、文档、提交信息均使用简体中文。
-- [ ] 调用任何MCP服务前已对照`AI-AGENT_mcp-rules.md`确认权限范围，并在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/mcp-log.md`记录调用摘要。
+- [ ] 调用任何MCP服务前已对照`AI-AGENT_mcp-rules.md`确认权限范围，并在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/mcp-log.csv`记录调用摘要（必要时可在`mcp-log.md`补充说明）。
 
 ## 任务前置准备
 - [ ] 已完整阅读`now-task.md`并梳理目标、边界、成功标准。
 - [ ] 已审阅相关文档、历史记录和项目结构，识别依赖与风险。
 - [ ] 判断任务复杂度，必要时准备调用Sequential-Thinking服务。
-- [ ] `undetermined.md`记录了所有待用户确认事项，并按模板填写。
-- [ ] 已生成或更新`optimized-task.md`，包含优化后的任务描述、步骤与验证方式。
+- [ ] `undetermined.md`记录了所有待用户确认事项，并按模板填写；确认后仅保留采纳方案。
+- [ ] 已读取并记录`general/user-temp-opinion.md`中的最新临时意见。
+- [ ] 已生成或更新`optimized-task.md`，包含优化后的任务描述、步骤与验证方式，并整合临时意见结论。
 - [ ] 在工作状态文档新增“任务前置准备”记录，说明当前理解与待确认事项。
 
 ## 流程设计
 - [ ] 已梳理完成路径、关键节点、输入与输出。
 - [ ] 针对不明确或多方案部分，列出选项及沟通计划。
 - [ ] 复杂流程已拆分为模块，并在设计文档或流程图中标注接口与异常处理。
-- [ ] `optimized-task.md`中的流程描述、成功标准已同步更新。
+- [ ] `optimized-task.md`中的流程描述、成功标准已同步更新，并反映`general/user-temp-opinion.md`及`undetermined.md`的最终结果。
 - [ ] 对照KISS/YAGNI/DRY原则，确认无冗余或不必要复杂度。
 - [ ] 已在状态文档记录进入“流程设计”环节的时间与概要。
 
@@ -50,8 +51,9 @@
 
 ## 文档更新
 - [ ] 项目内受影响的文档（如`README.md`、`CHANGELOG.md`、设计文档）均已更新。
-- [ ] 更新工作状态后已优先维护`CHANGELOG.md`，再执行`git add .`并创建提交。
+- [ ] 更新工作状态后已优先维护`CHANGELOG.md`，并完成本轮版本号更新（创建新版本段落、写入日期、重建空的`[Unreleased]`区块），再执行`git add .`并创建提交。
 - [ ] `AI-AGENT_project.md`或其他规范文档已记录新的约定、流程或决策。
+- [ ] 如`general/user-temp-opinion.md`模板或说明有调整，已在本阶段同步确认并更新。
 - [ ] 若生成/修改流程图，PNG输出与源文件同步。
 - [ ] 所有临时笔记、脚本说明等已整理至合适位置或明确存档意图。
 - [ ] 状态文档记录了已完成的文档更新范围与待补充项。
@@ -59,6 +61,6 @@
 ## 收尾
 - [ ] 仓库处于整洁状态，临时文件、冗余日志等已清理。
 - [ ] `now-task.md`已恢复为仅保留标题的初始模板。
-- [ ] `ai-agent-output/`下的辅助文档目录结构完整，无需删除`optimized-task.md`、`undetermined.md`或`mcp-log.md`。
+- [ ] `ai-agent-output/`下的辅助文档目录结构完整，无需删除`optimized-task.md`、`undetermined.md`、`mcp-log.csv`或`mcp-log.md`，且确认`CHANGELOG.md`中的最新版本号已记录本轮成果。
 - [ ] Git提交与TodoWrite状态一致，提交信息准确反映变更内容。
 - [ ] 已在状态文档新增最终记录，概述交付成果、遗留问题与后续建议。

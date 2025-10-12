@@ -27,5 +27,8 @@
    - `criterion-react/`：覆盖React(TypeScript) SPA、SSR/边缘渲染、设计系统、状态管理、性能质量等方向的守则。
    - `criterion-flutter-rust/`：针对Flutter与Rust协同的多方案守则与项目指导。
    - `criterion-react-rust/`：针对React(TypeScript)与Rust协同的多方案守则与项目指导。
+5. **复制与阅读策略**
+   - 初始化项目后，`general/`中除`AI-AGENT_project.md`外的文件会同步到`ai-agent-memory/`，作为常驻指令。
+   - 默认仅需查阅`ai-agent-memory/`下除`criterion-*`系列目录之外的文档；遇到特定语言/框架/协同需求时，再按需阅读对应的`criterion-*`守则。
 
 > 提示：若需要额外的运行脚本或配置片段，请在目标项目中自行维护，避免污染模板目录。

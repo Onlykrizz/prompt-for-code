@@ -12,6 +12,7 @@
 
 ### 变更 (Changed)
 - 在 `general/README.md` 增补 Flutter+Rust、React+Rust 目录索引。
+- 调整 `AI-AGENT_general.md`、`AI-AGENT_check.md`、`AI-AGENT_step-before.md` 的阅读指引，默认仅需查阅非 `criterion-*` 文档，按需引用规范守则。
 
 ## [0.11.0] - 2025-10-12
 ### 新增 (Added)

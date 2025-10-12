@@ -4,6 +4,7 @@
 
 ## 使用说明
 - 首先完整阅读项目根目录下的`AI-AGENT.md`，并确认`ai-agent-memory/`目录内的文件已复制到项目中。
+- `general/`目录除`AI-AGENT_project.md`外的内容会复制至`ai-agent-memory/`中作为常驻指令；默认仅需阅读`ai-agent-memory/`下除`criterion-*`系列目录之外的文档，遇到需要参考特定规范守则时，再按需查阅对应的`criterion-*`文档。
 - 在首次进入“任务前置准备”环节前，需要创建`AI-AGENT_working-status.csv`，并按“工作状态记录规范”维护工作状态。
 - 若在执行过程中需要编程或专业化开发支持，请结合`AI-AGENT_programming.md`中的额外要求一起使用。
 - 全程使用简体中文进行思考、记录和对话，保持术语统一。

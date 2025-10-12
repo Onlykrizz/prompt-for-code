@@ -1,0 +1,13 @@
+{
+    "mcpServers": {
+        "git": {
+            "command": "D:\\service\\my-tools\\env_hub\\py313free-for-mcp\\Scripts\\python.exe",
+            "args": [
+                "-m",
+                "mcp_server_git",
+                "--repository",
+                "D:\\project\\standalone\\prompt-for-code"
+            ]
+        }
+    }
+}

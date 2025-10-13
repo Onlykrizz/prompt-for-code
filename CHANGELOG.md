@@ -36,7 +36,7 @@
 
 ### 变更 (Changed)
 - 强化 general 目录的任务前置准备与流程设计要求，执行前必须列出待定项、整合临时意见并获用户确认。
-- 统一 general 下各指引（含 `AI-AGENT_mcp-rules.md`、`AI-AGENT_general.md`、`AI-AGENT_step-before.md`、`AI-AGENT_check.md`、`AI-AGENT_programming.md`、`AI-AGENT_project.md`、`README.md`）的日志规范，明确以 `mcp-log.csv` 为主记录、`mcp-log.md` 为说明文档。
+- 统一 general 下各指引（含 `AI-AGENT_mcp-rules.md`、`AI-AGENT_general.md`、`AI-AGENT_step-before.md`、`AI-AGENT_check.md`、`AI-AGENT_programming.md`、`Agents.md`、`README.md`）的日志规范，明确以 `mcp-log.csv` 为主记录、`mcp-log.md` 为说明文档。
 - 将 `general/criterion-rust/` 下 `规范指导_*` 文件统一重命名为 `规范守则_*`，并同步更新文内标题与术语保持一致。
 
 ## [0.8.0] - 2025-10-11

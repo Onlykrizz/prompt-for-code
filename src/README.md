@@ -3,11 +3,22 @@
 本目录用于集中维护AI代理执行任务所需的基础文档和模板。复用方式如下：
 
 1. **初始化项目规范**
-   - 将`AI-AGENT_project.md`复制到目标项目根目录，并重命名为`AI-AGENT.md`。
-   - 将除`AI-AGENT_project.md`以外的所有文件复制到目标项目的`ai-agent-memory/`目录下。
+   - 将`Agents.md`复制到目标项目根目录。
+   - 将`ai-agent-memo-1`复制到目标项目根目录下并重命名为`ai-agent-memory`。
+   - 将`criterion-*`系列目录复制到目标项目的`ai-agent-memory`目录下。
+   - 完成这一步后的，若目标项目路径为`/path/to/project/`，则其下至少应该有下列文件，
+  /path/to/project/
+  ├── Agents.md
+  └── ai-agent-memory
+      ├── AI-AGENT_check.md
+      ├── AI-AGENT_general.md
+      ├── ……（其他AI-AGENT_*.md文档）
+      ├── criterion-python
+      ├── ……（其他criterion-*目录）
+      └── criterion-rust
 
 2. **任务执行前准备**
-   - 在复制完成后，项目中的`AI-AGENT.md`会提醒代理优先阅读`ai-agent-memory/`内的指引。
+   - 在复制完成后，项目中的`Agents.md`会提醒代理优先阅读`ai-agent-memory/`内的指引。
    - `AI-AGENT_general.md`涵盖所有通用任务流程；如执行编程任务，再结合`AI-AGENT_programming.md`。
    - `AI-AGENT_check.md`提供阶段性检查清单，确保每个环节的工作质量。
    - `AI-AGENT_mcp-rules.md`汇总常用MCP服务的调用规范、安全边界与记录要求。
@@ -28,7 +39,7 @@
    - `criterion-flutter-rust/`：针对Flutter与Rust协同的多方案守则与项目指导。
    - `criterion-react-rust/`：针对React(TypeScript)与Rust协同的多方案守则与项目指导。
 5. **复制与阅读策略**
-   - 初始化项目后，`general/`中除`AI-AGENT_project.md`外的文件会同步到`ai-agent-memory/`，作为常驻指令。
+   - 初始化项目后，`src/`中除`Agents.md`外的文件会同步到`ai-agent-memory/`，作为常驻指令。
    - 默认仅需查阅`ai-agent-memory/`下除`criterion-*`系列目录之外的文档；遇到特定语言/框架/协同需求时，再按需阅读对应的`criterion-*`守则。
 
 > 提示：若需要额外的运行脚本或配置片段，请在目标项目中自行维护，避免污染模板目录。

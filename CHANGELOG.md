@@ -6,6 +6,13 @@
 
 ## [Unreleased]
 
+## [0.13.0] - 2025-10-13
+### 新增 (Added)
+- 新增 `src/ai-agent-memo-2/AI-AGENT_criterion.md`、`AI-AGENT_step-before.md`、`AI-AGENT_check.md`、`undetermined-template.md` 与 `now-task.md`，提供精简版编程任务指引。
+
+### 变更 (Changed)
+- 调整 `src/Agents.md` 快速指引与工作要求摘要，对接精简指令体系并移除 MCP 日志默认要求。
+
 ## [0.12.0] - 2025-10-12
 ### 新增 (Added)
 - 创建 `general/criterion-flutter-rust/` 与 `general/criterion-react-rust/`，提供 Flutter/React 与 Rust 协同的多方案守则与项目创建维护指导。

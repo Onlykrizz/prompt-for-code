@@ -5,7 +5,7 @@
 ## 使用说明
 1. 工作前先阅读本文件与同目录的模板文件，确保理解整体流程。
 2. 所有记录、提交与沟通统一使用简体中文。
-3. 使用`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`集中存放`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`及其他辅助文档。
+3. 使用`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC+8_任务简述/`集中存放`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`及其他辅助文档。
 4. 每次更新`AI-AGENT_working-status.csv`后立即执行`git add .`并提交，保持变更可追溯。
 5. 复杂或多模块任务必须调用Sequential-Thinking，输出计划后再进入执行。
 6. 临时约定统一记录在`optimized-task.md`的“执行前约束”表格，确认后标记状态。
@@ -57,7 +57,7 @@
 3. 对复杂度或资源需求进行初步评估，提前规划测试、工具链。
 
 ### 模板/命令
-1. `ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/undetermined.md`：待定项记录模板。
+1. `ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC+8_任务简述/undetermined.md`：待定项记录模板。
 2. `optimized-task.md`：用于整理最终任务描述、执行步骤与验证标准。
 
 ## 2. 流程设计

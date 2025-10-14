@@ -13,3 +13,4 @@
 2025-10-14 19:22:06 (Asia/Shanghai),验证准备,验证结果,开始对照AI-AGENT_criterion自检表与任务成功标准进行核查，并整理验证证据。
 2025-10-14 19:23:52 (Asia/Shanghai),验证完成,验证结果,核查所有交付物满足执行步骤与验证标准,optimized-task.md已记录勾选结果,可进入文档更新环节。
 2025-10-14 19:24:34 (Asia/Shanghai),开始更新,文档更新,准备维护CHANGELOG、Agents与README等关联文档并记录提交。
+2025-10-14 19:27:12 (Asia/Shanghai),更新完成,文档更新,已维护CHANGELOG新增0.14.0条目并同步更新README快速指引,等待收尾阶段核查。

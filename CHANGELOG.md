@@ -6,6 +6,18 @@
 
 ## [Unreleased]
 
+## [0.14.0] - 2025-10-14
+### 新增 (Added)
+- 创建 `src/ai-agent-memo-3/` 目录并新增 `AI-AGENT_criterion.md`、`AI-AGENT_step-before.md`、`now-task.md`、`undetermined-template.md`，统一编程任务流程、模板与自检表。
+- 在 `ai-agent-output/2025-10-14T10-49-11_UTC_精简指令体系流程/` 中补充 `flow-design.md`、更新版 `optimized-task.md` 作为流程设计与验证记录。
+
+### 变更 (Changed)
+- 重写 `Agents.md` 与 `ai-agent-memory/` 快速指引，改为指向新的精简文档，并更新状态记录及临时约束的执行方式。
+- 调整 `ai-agent-memory/AI-AGENT_step-before.md`、`now-task.md`、`undetermined-template.md` 为精简结构，强调“执行前约束”表和必填检查表。
+
+### 移除 (Removed)
+- 移除 `ai-agent-memory` 中的 `AI-AGENT_general.md`、`AI-AGENT_programming.md`、`AI-AGENT_mcp-rules.md`、`AI-AGENT_check.md`、`user-temp-opinion.md`，取消 `mcp-log` 相关日志要求。
+
 ## [0.13.0] - 2025-10-13
 ### 新增 (Added)
 - 新增 `src/ai-agent-memo-2/AI-AGENT_criterion.md`、`AI-AGENT_step-before.md`、`AI-AGENT_check.md`、`undetermined-template.md` 与 `now-task.md`，提供精简版编程任务指引。

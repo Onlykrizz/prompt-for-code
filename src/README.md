@@ -19,14 +19,14 @@
 
 2. **任务执行前准备**
    - 在复制完成后，项目中的`Agents.md`会提醒代理优先阅读`ai-agent-memory/`内的指引。
-   - `AI-AGENT_general.md`涵盖所有通用任务流程；如执行编程任务，再结合`AI-AGENT_programming.md`。
-   - `AI-AGENT_check.md`提供阶段性检查清单，确保每个环节的工作质量。
-   - `AI-AGENT_mcp-rules.md`汇总常用MCP服务的调用规范、安全边界与记录要求。
-   - `now-task.md`是待用户填写的任务输入模板，执行完毕需恢复为原始状态。
+   - `AI-AGENT_criterion.md`整合任务六环节流程、MCP调用基准与执行自检表。
+   - `AI-AGENT_step-before.md`提供任务前置准备的顺序清单。
+   - `now-task.md`是“任务描述 + 必填检查表”模板，执行完毕需恢复为原始状态。
+   - `undetermined-template.md`规范待定项的记录方式。
 
 3. **工作状态记录**
-   - 按`AI-AGENT_general.md`中的规范，新建`AI-AGENT_working-status.csv`并维护环节记录。
-   - 将`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.csv`与`mcp-log.md`等辅助文档统一存放至`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录，保持任务简述8-20字。
+   - 按`AI-AGENT_criterion.md`中的规范，新建`AI-AGENT_working-status.csv`并维护环节记录。
+   - 将`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`等辅助文档统一存放至`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录，保持任务简述8-20字。
    - 提交前务必执行`git add .`以追踪全部未忽略文件，并在更新工作状态后优先维护`CHANGELOG.md`与版本号（生成新版本段落、写入日期、重建空的`[Unreleased]`）再进行提交。
    - 请确保每次复制后指引内容保持最新，若有新约定需回写到本目录。
 

@@ -35,3 +35,10 @@
 - `ai-agent-output`中的流程文件与新指引描述保持一致，能够支持未来任务执行。
 - 项目中不再新增或引用`user-temp-opinion.md`、`mcp-log.csv/md`。
 - 最新一条状态记录表明已切换至“流程设计”环节并概述设计准备情况。
+
+## 验证记录
+- [x] `src/ai-agent-memo-3`目录已建立并包含`AI-AGENT_criterion.md`、`AI-AGENT_step-before.md`、`now-task.md`、`undetermined-template.md`。
+- [x] `AI-AGENT_criterion.md`满足三段式结构、内含MCP调用基准表与执行自检表，每区块条目 ≤12条。
+- [x] `AI-AGENT_step-before.md`与`now-task.md`为精简版本，引用新“执行前约束”规则且不提及`user-temp-opinion.md`与`mcp-log`。
+- [x] `ai-agent-memory/`已同步替换为新模板，仅保留精简文档集合。
+- [x] 状态记录已进入“验证结果”阶段并覆盖关键过程节点。

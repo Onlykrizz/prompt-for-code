@@ -9,7 +9,7 @@
 - `ai-agent-memory/now-task.md`：任务描述模板，执行前需完成内容预处理。
 
 ## 工作要求摘要
-1. **工作状态同步**：首次进入“任务前置准备”环节时创建`AI-AGENT_working-status.csv`，并将`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`等辅助文档统一存放在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录下（任务简述控制在8-20字），按环节维护记录并在每次更新该文件后立即创建git提交以保留状态变更轨迹。
+1. **工作状态同步**：首次进入“任务前置准备”环节时创建`AI-AGENT_working-status.csv`，并将`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`等辅助文档统一存放在`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC+8_任务简述/`目录下（任务简述控制在8-20字），按环节维护记录并在每次更新该文件后立即创建git提交以保留状态变更轨迹。
 2. **流程驱动执行**：严格遵循“任务前置准备 → 流程设计 → 任务主体流程循环 → 验证结果 → 文档更新 → 收尾”的顺序执行，返工时需回退环节并记录原因。
 3. **信息留痕**：所有阶段性成果、关键决策、风险与约定必须记录在相应文档中（含本文件、流程设计文档、`optimized-task.md`等）。
 4. **交付完成标准**：以`AI-AGENT_criterion.md`末尾的执行自检表逐环节核对，验证交付物满足成功标准后方可收尾。

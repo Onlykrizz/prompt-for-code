@@ -26,7 +26,7 @@
 
 ## 工作状态记录规范
 - 文件：`AI-AGENT_working-status.csv`，首次进入“任务前置准备”前创建。
-- 存储位置：在项目初始化时于`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`目录下集中存放`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.csv`与`mcp-log.md`等辅助文档，任务简述建议控制在8-20字，例如`ai-agent-output/2025-10-11T20-37-40_UTC+8_更新指令存储规范/optimized-task.md`。
+- 存储位置：在项目初始化时于`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC+8_任务简述/`目录下集中存放`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`、`mcp-log.csv`与`mcp-log.md`等辅助文档，任务简述建议控制在8-20字，例如`ai-agent-output/2025-10-11T20-37-40_UTC+8_更新指令存储规范/optimized-task.md`。
 - 添加记录时总是插入在文档最后一行。
 - 每条记录必须包含以下信息：
   - **时间戳**：使用`mcp-time`获取的实时时间，推荐格式：`YYYY-MM-DD HH:MM:SS (时区)`。

@@ -1,0 +1,48 @@
+[mcp_servers.mcp-router]
+command = "npx"
+args = ["-y", "@mcp_router/cli@latest", "connect"]
+env = { MCPR_TOKEN = "mcpr_pDUNmDWPJ9rYmWcQ0DT0gRmmpEJMc0Kt" }
+
+[mcp_servers.mcp-time]
+command = "D:\\service\\my-tools\\env_hub\\py313free-for-mcp\\Scripts\\python.exe"
+args = ["-m", "mcp_server_time", "--local-timezone=Asia/Shanghai"]
+
+[mcp_servers.mcp-sequential-thinking]
+command = "C:\\Program Files\\nodejs\\node.exe"
+args = ["C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\@modelcontextprotocol\\server-sequential-thinking\\dist\\index.js"]
+
+[mcp_servers.mcp-filesystem]
+command = "C:\\Program Files\\nodejs\\node.exe"
+args = ["C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\@modelcontextprotocol\\server-filesystem\\dist\\index.js"]
+
+[mcp_servers.mcp-context7]
+command = "C:\\Program Files\\nodejs\\node.exe"
+args = ["C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\@upstash\\context7-mcp\\dist\\index.js"]
+
+[mcp_servers.mcp-playwright]
+command = "C:\\Program Files\\nodejs\\node.exe"
+args = ["C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\@playwright\\mcp\\dist\\index.js"]
+
+# [mcp_servers.mcp-shrimp-task-manager]
+# command = "/home/sayurinana/.nvm/versions/node/v22.20.0/bin/mcp-shrimp-task-manager"
+# env = { DATA_DIR = "/mnt/d/appdata/mcp-shrimp-task-manager/data", TEMPLATES_USE = "zh", ENABLE_GUI = "false" }
+
+[mcp_servers.mcp-deepwiki]
+command = "C:\\Program Files\\nodejs\\node.exe"
+args = ["C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\mcp-deepwiki\\dist\\index.js"]
+
+[mcp_servers.mcp-desktop-commander]
+command = "C:\\Program Files\\nodejs\\node.exe"
+args = ["C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\@wonderwhy-er\\desktop-commander\\dist\\index.js"]
+
+[mcp_servers.mcp-serena]
+command = "D:\\service\\my-tools\\env_hub\\serena\\.venv\\Scripts\\serena.exe"
+args = ["start-mcp-server"]
+
+# [mcp_servers.mcp-ddg-search]
+# command = "/home/sayurinana/env-hub/py313free-for-mcp/bin/duckduckgo-mcp-server"
+
+[mcp_servers.mcp-web-search]
+command = "C:\\Program Files\\nodejs\\node.exe"
+args = ["C:\\Users\\sayurinana\\AppData\\Roaming\\npm\\node_modules\\open-websearch\\build\\index.js"]
+env = { MODE = "stdio", DEFAULT_SEARCH_ENGINE = "duckduckgo", ENABLE_CORS = "true", CORS_ORIGIN = "*", USE_PROXY = "true", PROXY_URL = "http://127.0.0.1:10809" }

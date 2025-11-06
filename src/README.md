@@ -4,7 +4,7 @@
 
 1. **初始化项目规范**
    - 将`Agents.md`复制到目标项目根目录。
-   - 将`ai-agent-memo-1`复制到目标项目根目录下并重命名为`ai-agent-memory`。
+   - 将`ai-agent-memo-4`复制到目标项目根目录下并重命名为`ai-agent-memory`。
    - 将`criterion-*`系列目录复制到目标项目的`ai-agent-memory`目录下。
    - 完成这一步后的，若目标项目路径为`/path/to/project/`，则其下至少应该有下列文件，
   /path/to/project/

@@ -38,8 +38,16 @@ result-B/
 
 ### 核心流程
 ```
-now-task.md → 分析优化 → undetermined.md → 用户确认 → optimized-task.md → 用户确认满意 → 重命名为task-spec.md → A结束
+now-task.md → 分析优化 → undetermined.md → 用户确认待定项 → optimized-task.md → 用户确认
+                ↑                                                                    ↓
+                └──────────────── 不满意：根据用户意见返工 ←─────────────────────────┘
+                                                                                     ↓
+                                                            满意 → 重命名为task-spec.md → A结束
 ```
+
+### 返工机制
+- 若用户对`undetermined.md`有异议：根据意见调整待定项，重新生成`undetermined.md`
+- 若用户对`optimized-task.md`不满意：根据用户提出的具体意见，返工到分析优化环节，重新产出中间文档
 
 ### 设计要点
 1. **轻量化运行**：无csv状态记录、无git提交操作

@@ -1,0 +1,50 @@
+@startuml
+skinparam defaultFontName "PingFang SC"
+title A部分：任务前置准备流程
+
+start
+:读取 now-task.md;
+:分析任务内容;
+note right
+  - 理解核心目标
+  - 识别复杂度
+  - 项目环境分析
+end note
+
+:任务内容优化;
+note right
+  - 准确性优化
+  - 简洁性优化
+  - 可执行性优化
+end note
+
+:生成 undetermined.md;
+:用户确认待定项;
+
+if (用户是否满意?) then (不满意)
+  :根据用户意见调整;
+  -> 返工;
+  :重新分析优化;
+  -> 生成 undetermined.md;
+else (满意)
+endif
+
+:整合确认结果;
+:生成 optimized-task.md;
+:用户确认任务细则;
+
+if (用户是否满意?) then (不满意)
+  :根据用户意见返工;
+  -> 返工到分析优化;
+else (满意)
+endif
+
+:重命名为 task-spec.md;
+:A过程结束;
+note right
+  产出物：task-spec.md
+  交付给B过程使用
+end note
+
+stop
+@enduml

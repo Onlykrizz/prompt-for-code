@@ -1,0 +1,50 @@
+@startuml
+skinparam defaultFontName "PingFang SC"
+title B部分：任务执行流程
+
+start
+:读取 task-spec.md;
+note right
+  由A过程产出
+  或用户直接提供
+end note
+
+:读取项目文件;
+:综合分析任务与项目;
+
+#LightBlue:【流程设计】;
+:创建工作目录和状态文件;
+:制作PlantUML流程图;
+:输出流程设计文档;
+:git提交;
+
+#LightGreen:【任务主体流程循环】;
+:按设计逐项实现;
+while (还有子任务?) is (是)
+  :执行子任务;
+  :更新状态记录并git提交;
+endwhile (否)
+
+#LightYellow:【验证结果】;
+:对照任务细则验证产出;
+:运行测试/自检;
+if (验证通过?) then (是)
+  :记录验证结论;
+else (否)
+  :记录问题并返工修复;
+  note right: 返回任务主体流程
+endif
+
+#LightPink:【文档更新】;
+:更新受影响文档;
+:维护 CHANGELOG.md;
+:git提交;
+
+#LightGray:【收尾】;
+:清理临时文件;
+:最终状态记录;
+:git提交;
+:B过程结束;
+
+stop
+@enduml

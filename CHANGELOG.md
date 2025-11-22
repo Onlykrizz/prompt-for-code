@@ -6,6 +6,26 @@
 
 ## [Unreleased]
 
+## [0.15.0] - 2025-11-22
+### 新增 (Added)
+- 创建 `result-A/` 目录，包含任务前置准备（A部分）的完整指令体系：
+  - `claude.md`：A部分入口文件
+  - `ai-agent-memory/AI-AGENT_preparation.md`：任务前置准备核心规范
+  - `ai-agent-memory/AI-AGENT_step-before.md`：前置准备详细流程
+  - `ai-agent-memory/undetermined-template.md`：待定项记录模板
+  - `ai-agent-memory/now-task.md`：任务输入文件模板
+- 创建 `result-B/` 目录，包含任务执行（B部分）的完整指令体系：
+  - `claude.md`：B部分入口文件
+  - `ai-agent-memory/AI-AGENT_execution.md`：任务执行核心规范（5个环节）
+  - `ai-agent-memory/task-spec.md`：任务细则模板
+- 创建 `program_flowchart/` 目录，包含A和B部分的PlantUML流程图源文件及PNG输出
+
+### 变更 (Changed)
+- 将原六步流程指令体系拆分为两个独立部分：
+  - A部分：专注于任务前置准备，轻量化运行（无csv状态记录、无git提交）
+  - B部分：专注于任务执行，保留完整的状态记录和git提交机制
+- A部分产出 `task-spec.md` 作为B部分的输入依赖，实现两套系统解耦
+
 ## [0.14.0] - 2025-10-14
 ### 新增 (Added)
 - 创建 `src/ai-agent-memo-3/` 目录并新增 `AI-AGENT_criterion.md`、`AI-AGENT_step-before.md`、`now-task.md`、`undetermined-template.md`，统一编程任务流程、模板与自检表。

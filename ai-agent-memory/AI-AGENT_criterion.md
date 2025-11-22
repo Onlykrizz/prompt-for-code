@@ -1,11 +1,9 @@
 # AI-AGENT_criterion.md
 
-> 统一适用于编程类任务的精简流程指引。仅参考本目录的文档执行流程，`src/ai-agent-memo-1`保留为历史档案。
-
 ## 使用说明
 1. 工作前先阅读本文件与同目录的模板文件，确保理解整体流程。
 2. 所有记录、提交与沟通统一使用简体中文。
-3. 使用`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/`集中存放`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`及其他辅助文档。
+3. 使用`ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC+8_任务简述/`集中存放`AI-AGENT_working-status.csv`、`undetermined.md`、`optimized-task.md`及其他辅助文档。
 4. 每次更新`AI-AGENT_working-status.csv`后立即执行`git add .`并提交，保持变更可追溯。
 5. 复杂或多模块任务必须调用Sequential-Thinking，输出计划后再进入执行。
 6. 临时约定统一记录在`optimized-task.md`的“执行前约束”表格，确认后标记状态。
@@ -44,12 +42,10 @@
 
 ## 1. 任务前置准备
 ### 核心必做
-1. 阅读用户填写的`now-task.md`并完成“任务描述+必填检查表”，确认目标、边界与成功标准。
-2. 审阅相关历史文档、代码结构与依赖，识别潜在风险。
-3. 在`AI-AGENT_working-status.csv`创建初始记录并提交。
-4. 如果任务涉及多个模块或不确定点，调用Sequential-Thinking生成初步方案。
-5. 按`undetermined-template.md`整理待定项，写入`undetermined.md`。
-6. 在`optimized-task.md`的“执行前约束”表格记录用户临时意见或约束。
+1. 遵循`AI-AGENT_step-before.md`的要求，完成准备工作。
+2. 在“任务内容优化阶段”中，必须对任务目标进行多维度分析，列出所有可能的优化方案，并按`undetermined-template.md`模板整理待定项写入`undetermined.md`；未经用户统一确认不得进入下一环节。
+3. 用户确认后，仅保留采纳方案，其余待定项需删除，并将结论汇总至`optimized-task.md`。
+4. 每次进入新的子环节时更新工作状态，若临时意见有变更，应立即记录原因与影响。
 
 ### 补充细则
 1. 若存在日志豁免或特殊限制，引用原始说明并在状态中记录。
@@ -57,7 +53,7 @@
 3. 对复杂度或资源需求进行初步评估，提前规划测试、工具链。
 
 ### 模板/命令
-1. `ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC_任务简述/undetermined.md`：待定项记录模板。
+1. `ai-agent-output/YYYY-MM-DDTHH-MM-SS_UTC+8_任务简述/undetermined.md`：待定项记录模板。
 2. `optimized-task.md`：用于整理最终任务描述、执行步骤与验证标准。
 
 ## 2. 流程设计

